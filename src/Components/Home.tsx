@@ -65,23 +65,23 @@ const Home:React.FunctionComponent = ()=>{
             <div className="bg-black w-full 2xl:h-20vh xl:h-20vh lg:h-10vh md:h-10vh sm:h-10vh xs:h-10vh xx:h-10vh">
                
             </div>
-            <div className="flex justify-center items-center flex-col mb-40 gap-4 antialiased text-slate-500 dark:text-slate-400 bg-white dark:bg-slate-900 w-full h-full">
-               <div className="w-[80%] h-full flex justify-center items-start gap-4 p-4  2xl:flex-row xl:flex-row lg:flex-row md:flex-col sm:flex-col xs:flex-col ">
+            <div className="flex justify-center items-center flex-col  gap-4 antialiased text-slate-500 dark:text-slate-400 bg-white dark:bg-slate-900 w-full h-full">
+               <div className="w-[70%] h-[80%] flex justify-center items-start gap-4 p-4  2xl:flex-row xl:flex-row lg:flex-row md:flex-col sm:flex-col xs:flex-col ">
                     <div className="w-full h-full">
                         <img src={restart} alt="restart-logo" className="w-full h-full object-cover"/>
                     </div>
                     <div className="w-full h-full flex justify-center items-center flex-col">
                         <h2 className="text-white font-Poppins ">Company Links</h2>
                         <ul className='w-full flex justify-center items-center p-4 flex-col'>
-                            <li><a href="/" className='p-4 font-Roboto font-bold active:text-orange-400 active:underline '>Home</a></li>
-                            <li><a href="/courses" className='p-4 font-RobotoCondensed font-bold'>Courses</a></li>
-                            <li><a href="#about" className='p-4 font-RobotoCondensed font-bold'>About Us</a></li>
-                            <li><a href="/blog" className='p-4 font-RobotoCondensed font-bold'>Blog</a></li>
+                            <li><a href="/" className='m-4 font-Roboto active:text-orange-400 active:underline text-sm'>Home</a></li>
+                            <li><a href="/courses" className='m-4 font-RobotoCondensed text-sm'>Courses</a></li>
+                            <li><a href="#about" className='m-4 font-RobotoCondensed text-sm'>About Us</a></li>
+                            <li><a href="/blog" className='m-4 font-RobotoCondensed text-sm'>Blog</a></li>
                         </ul>
                     </div>
                     <div className="w-full h-full flex justify-center items-center flex-col">
                         <h2 className="text-white font-Poppins ">Contact Us</h2>
-                        <span>restartdigital09@gmail.com</span>
+                        <span>programs.restartdigital09@gmail.com</span>
                     </div>
                     <div className="w-full h-full flex justify-center items-center flex-col">
                         <h2 className="text-white font-Poppins ">Services</h2>
