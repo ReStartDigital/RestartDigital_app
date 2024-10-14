@@ -45,6 +45,7 @@ const handleSubmit = async()=>{
 
   return (
     <section className="w-full h-100vh flex justify-center items-center">
+      <Toaster position='top-right'/>
     <div className="w-[60%] h-[80%] bg-white mt-40 flex justify-center items-center 2xl:flex-row xl:flex-row lg:flex-row md:flex-col-reverse sm:flex-col-reverse xs:flex-col-reverse">
         <div className='w-full bg-gray-200 h-[100%] p-4'>
             <h1 className='font-Poppins text-3xl font-bold text-center'>Sign in</h1>
