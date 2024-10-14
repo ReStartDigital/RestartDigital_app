@@ -8,7 +8,7 @@ import { Toaster , toast } from "react-hot-toast";
 interface User {
     fullName:string;
     email:string;
-    institutionName:string;
+    telephoneNumber:string;
     dateOfBirth:string;
     password:string;
     confirmPassword?:string;
@@ -20,7 +20,7 @@ const Register:React.FunctionComponent = ()=>{
         {
             fullName:"",
             email:"",
-            institutionName:"",
+            telephoneNumber:"",
             dateOfBirth:"",
             password:"",
             confirmPassword:"",
@@ -65,8 +65,8 @@ const Register:React.FunctionComponent = ()=>{
                             <input type='email' value={formData.email} name="email" placeholder="Type your email" onChange={handleChange} className="w-[70%] p-4 font-Roboto focus:outline-none" required/>
                         </div>
                         <div className="w-full h-[8%] flex justify-between items-center mb-4">
-                            <label>Institution name</label>
-                            <input type='text' value={formData.institutionName} onChange={handleChange} name="institutionName" placeholder="Type your name" className="w-[70%] p-4 font-Roboto focus:outline-none" required/>
+                            <label>Telephone number</label>
+                            <input type='text' value={formData.telephoneNumber} onChange={handleChange} name="telephoneNumber" placeholder="Type your name" className="w-[70%] p-4 font-Roboto focus:outline-none" required/>
                         </div>
                         <div className="w-full h-[8%] flex justify-between items-center mb-4">
                             <label>Date of birth</label>

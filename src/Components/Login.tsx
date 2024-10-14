@@ -7,7 +7,6 @@ import { Toaster , toast } from 'react-hot-toast';
 
 
 type User = {
-  fullName:string;
   email:string;
   password:string;
   agreed:boolean;
@@ -15,7 +14,6 @@ type User = {
 
 const Login: React.FC = () => {
   const [ formData , setformData ] = useState<User>({
-    fullName:"",
     email:"",
     password:"",
     agreed:false
@@ -50,10 +48,6 @@ const handleSubmit = async()=>{
         <div className='w-full bg-gray-200 h-[100%] p-4'>
             <h1 className='font-Poppins text-3xl font-bold text-center'>Sign in</h1>
             <form className="w-full h-full gap-2 p-3 flex justify-center items-center flex-col" onSubmit={handleSubmit}>
-                <div className="w-full h-[8%] flex justify-between items-center mb-4">
-                    <label>Full Name</label>
-                    <input type='text' value={formData.fullName} name='fullName' onChange={handleChange} placeholder="Type your first name" className="w-[70%] p-4 font-Roboto focus:outline-none" required/>
-                </div>
                 <div className="w-full h-[8%] flex justify-between items-center mb-4">
                     <label>Email</label>
                     <input type='email' value={formData.email} name="email" onChange={handleChange} placeholder="Type your email" className="w-[70%] p-4 font-Roboto focus:outline-none" required/>
