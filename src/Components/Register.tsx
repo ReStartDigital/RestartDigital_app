@@ -33,7 +33,7 @@ const Register:React.FunctionComponent = ()=>{
         if(response.data){
             toast.success("Registered successfully");
         }
-        console.log(response.data)
+        
     }
 
 
@@ -43,7 +43,7 @@ const Register:React.FunctionComponent = ()=>{
           ...formData,
           [name]: type === 'checkbox' ? checked : value, 
         });
-        console.log(formData);
+       
       };
   
 
