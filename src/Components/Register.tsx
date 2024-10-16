@@ -28,11 +28,16 @@ const Register:React.FunctionComponent = ()=>{
         }
     )
 
-    const handleSubmit = async()=>{
-        const response = await axios.post("" , formData,{ withCredentials: true }) //insert backend url here
-        if(response.data){
-            toast.success("Registered successfully");
+    const handleSubmit = async(e:any)=>{
+        try{
+            const response = await axios.post("" , formData,{ withCredentials: true }) //insert backend url here
+            if(response.data){
+                toast.success("Registered successfully");
+            }  
+        }catch(err:any){
+            console.log(err);
         }
+        
         
     }
 

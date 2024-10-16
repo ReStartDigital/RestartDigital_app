@@ -28,8 +28,9 @@ const Login: React.FC = () => {
     })
   }
 
-const handleSubmit = async()=>{
+const handleSubmit = async(e:any)=>{
   try{
+    e.preventDefault();
     const response = await axios.post("" , formData , { withCredentials: true });//insert backend url here
     if(response.data){
     toast.success("logged in sucessfully")
