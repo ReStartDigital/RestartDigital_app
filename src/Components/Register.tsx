@@ -71,7 +71,7 @@ const Register:React.FunctionComponent = ()=>{
                         </div>
                         <div className="w-full h-[8%] flex justify-between items-center mb-4">
                             <label className='font-Poppins'>Telephone number:</label>
-                            <input type='text' value={formData.telephoneNumber} onChange={handleChange} name="telephoneNumber" placeholder="Type your name" className="w-[70%] p-4 focus:outline-none font-Poppins" required/>
+                            <input type='tel' value={formData.telephoneNumber} onChange={handleChange} name="telephoneNumber" placeholder="Type your telephone number" maxLength={10} className="w-[70%] p-4 focus:outline-none font-Poppins" required/>
                         </div>
                         <div className="w-full h-[8%] flex justify-between items-center mb-4">
                             <label className='font-Poppins'>Date of birth:</label>
