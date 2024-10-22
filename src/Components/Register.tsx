@@ -75,7 +75,7 @@ const Register:React.FunctionComponent = ()=>{
                         </div>
                         <div className="w-full h-[8%] flex justify-between items-center mb-4">
                             <label className='font-Poppins'>Date of birth:</label>
-                            <input type="date" value={formData.dateOfBirth} name="dateOfBirth" onChange={handleChange} className="w-[70%] p-4 font-Poppins"  />
+                            <input type="date" value={formData.dateOfBirth} name="dateOfBirth" onChange={handleChange} className="w-[70%] p-4 font-Poppins text-white bg-black"  />
                         </div>
                         <div className="w-full h-[10%] flex justify-between items-center mb-4">
                             <label className='font-Poppins'>Password:</label>
@@ -83,7 +83,7 @@ const Register:React.FunctionComponent = ()=>{
                         </div>
                         <div className="w-full h-[10%] flex justify-between items-center mb-4">
                             <label className='font-Poppins'>Confirm Password:</label>
-                            <input type='password' value={formData.confirmPassword}  onChange={handleChange} name="confirmPassword" placeholder="Type your password" minLength={8} className="w-[70%] p-4 font-Poppins" required/>
+                            <input type='password' value={formData.confirmPassword}  onChange={handleChange} name="confirmPassword" placeholder="Re-Type your password" minLength={8} className="w-[70%] p-4 font-Poppins" required/>
                         </div>
                         <div className="2xl:w-[60%] xl:w-[60%] lg:w-[80%] md:w-[70%] sm:w-[70%] xs:w-[80%] h-[8%] flex justify-between items-center mb-0 2xl:gap-0 xl:gap-0 lg:gap-0 md:gap-3 sm:gap-4 xs:gap-4">
                             <input type='checkbox' checked={formData.agreed} name="agreed"  onChange={handleChange} placeholder="Type your password"  minLength={8} className="p-2 font-Roboto accent-black" required/>
