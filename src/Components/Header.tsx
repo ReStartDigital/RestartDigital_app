@@ -3,7 +3,7 @@ import logo from "../assets/images/logo.jpg";
 
 const Header:React.FunctionComponent = ()=>{
      const registerHandler = ()=>{
-        window.location.href="http://localhost:3000/register/user"
+        window.location.href="http://localhost:3001/register/user"
      }
 
     return (
