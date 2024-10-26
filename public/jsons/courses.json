@@ -1,10 +1,60 @@
 [
     {
         "id":1,
-        "courses_name": "Front-end Web Development",
+        "courses_name": "Front-end Web Dev",
         "course_description": {
             "course_starred": "4.5",
-            "course_info": "Web development"
+            "course_info1": "Web development",
+            "course_info2": "Basic web development",
+            "course_info3": "HTML,CSS and JAVASCRIPT"
+        }
+    },
+    {
+        "id":2,
+        "courses_name":"cyberSecurity",
+        "course_description":{
+            "course_starred":"4.5",
+            "course_info1":"Introduction to Cybersecurity",
+            "course_info2": "Pentration Testing"
+        }
+    },
+    {
+        "id": 3,
+        "course_name": "Backend Dev",
+        "course_description":{
+            "course_starred": 5.0,
+            "course_info1": "Express.js , JAVA , Golang ,Python",
+            "course_info2": "MySQL database",
+            "course_info3": "Docker"
+        }
+    },
+    {
+       "id": 4,
+        "course_name": "Data Analytics",
+        "course_description":{
+            "course_starred": 5.0,
+            "course_info1": "Python , Excel , Power BI"
+        } 
+    },
+    {
+        "id": 5,
+        "course_name": "Graphic Design",
+        "course_description":{
+            "course_starred": 5.0,
+            "course_info1": "User Interface",
+            "course_info2":"User Experience"
+   
+        }
+    },
+    {
+        "id": 6,
+        "course_name": "Programming",
+        "course_description":{
+            "course_starred": 5.0,
+            "course_info1": "Javascript",
+            "course_info2": "Typescript",
+            "course_info3": "Python",
+            "course_info4": "Java"
         }
     }
 ]
