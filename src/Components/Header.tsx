@@ -7,7 +7,7 @@ const Header:React.FunctionComponent = ()=>{
      }
 
     return (
-        <section className='fixed w-full h-10vh bg-white flex 2xl:justify-center xl:justify-center lg:justify-center  md:justify-between xs:justify-between  items-center gap-5 z-30 p-1'>
+        <section className='fixed w-full h-10vh bg-white flex 2xl:justify-center xl:justify-center lg:justify-center  md:justify-between xs:justify-between  items-center gap-5 z-10 p-1'>
             <div className="w-[40%] h-full flex justify-center items-center">
                 <img className='w-[30%] h-full rounded-full' src={logo} alt="logo-picture"/>
             </div>

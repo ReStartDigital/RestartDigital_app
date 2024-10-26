@@ -85,7 +85,7 @@ const Register:React.FunctionComponent = ()=>{
                             <label className='font-Poppins'>Confirm Password:</label>
                             <input type='password' value={formData.confirmPassword}  onChange={handleChange} name="confirmPassword" placeholder="Re-Type your password" minLength={8} className="w-[70%] p-4 font-Poppins" required/>
                         </div>
-                        <div className="2xl:w-[60%] xl:w-[60%] lg:w-[80%] md:w-[70%] sm:w-[70%] xs:w-[80%] h-[8%] flex justify-between items-center mb-0 2xl:gap-0 xl:gap-0 lg:gap-0 md:gap-3 sm:gap-4 xs:gap-4">
+                        <div className="2xl:w-[60%] xl:w-[60%] lg:w-[60%] md:w-[50%] sm:w-[45%] xs:w-[80%] h-[8%] flex justify-between items-center mb-0 2xl:gap-0 xl:gap-0 lg:gap-0 md:gap-3 sm:gap-4 xs:gap-4">
                             <input type='checkbox' checked={formData.agreed} name="agreed"  onChange={handleChange} placeholder="Type your password"  minLength={8} className="p-2 font-Roboto accent-black" required/>
                             <label className="font-Poppins 2xl:text-md xl:text-md lg:text-md md:text-md sm:text-sm xs:text-xs">Agree with terms and conditions</label>
                         </div>

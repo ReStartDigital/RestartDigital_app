@@ -65,7 +65,8 @@ const handleSubmit = async(e:any)=>{
                 </div>
                 <div className="w-full h-[10%] flex justify-between items-center mb-4">
                     <label className='font-Poppins'>Password:</label>
-                    <input type='password' value={formData.password} name='password' onChange={handleChange} placeholder="Type your password" minLength={8} className="w-[70%] 2xl:p-4 xl:p-4 lg:p-3 md:p-3 sm:p-3 xs:p-3 font-Poppins focus:outline-none" required/>
+                    <input type='password' value={formData.password} name='password' onChange={handleChange} placeholder="Type your password" minLength={8}  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                    title="Must contain at least one number, one uppercase and lowercase letter, and at least 8 or more characters" className="w-[70%] 2xl:p-4 xl:p-4 lg:p-3 md:p-3 sm:p-3 xs:p-3 font-Poppins focus:outline-none" required/>
                 </div>
                 <div className="2xl:w-[60%] xl:w-[60%] lg:w-[80%] md:w-[70%] sm:w-[70%] xs:w-[80%] h-[8%] flex justify-between items-center mb-0 2xl:gap-0 xl:gap-0 lg:gap-0 md:gap-3 sm:gap-4 xs:gap-4">
                     <input type='checkbox' checked={formData.agreed} name="agreed" onChange={handleChange} minLength={8} className="p-2 font-Roboto accent-black focus:outline-none" required/>
