@@ -1,7 +1,9 @@
+
 [
     {
         "id":1,
-        "courses_name": "Front-end Web Dev",
+        "course_name": "Front-end Web Dev",
+        "image_path": "image/webdev.jpg",
         "course_description": {
             "course_starred": "4.5",
             "course_info1": "Web development",
@@ -11,7 +13,8 @@
     },
     {
         "id":2,
-        "courses_name":"cyberSecurity",
+        "course_name":"cyberSecurity",
+        "image_path": "image/cyber.jpg",
         "course_description":{
             "course_starred":"4.5",
             "course_info1":"Introduction to Cybersecurity",
@@ -21,6 +24,7 @@
     {
         "id": 3,
         "course_name": "Backend Dev",
+        "image_path": "image/backend.jpg",
         "course_description":{
             "course_starred": 5.0,
             "course_info1": "Express.js , JAVA , Golang ,Python",
@@ -31,6 +35,7 @@
     {
        "id": 4,
         "course_name": "Data Analytics",
+        "image_path": "image/data.jpg",
         "course_description":{
             "course_starred": 5.0,
             "course_info1": "Python , Excel , Power BI"
@@ -39,6 +44,7 @@
     {
         "id": 5,
         "course_name": "Graphic Design",
+        "image_path": "image/design.jpg",
         "course_description":{
             "course_starred": 5.0,
             "course_info1": "User Interface",
@@ -49,6 +55,7 @@
     {
         "id": 6,
         "course_name": "Programming",
+        "image_path": "image/person3.jpg",
         "course_description":{
             "course_starred": 5.0,
             "course_info1": "Javascript",

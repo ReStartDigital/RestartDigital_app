@@ -22,6 +22,7 @@ export default {
         '30vh':'30vh',
         '40vh':'40vh',
         '60vh':'60vh',
+        '50%':'50%',
       },
       fontFamily: {
         "Roboto": ["Roboto", "sans-serif"],
