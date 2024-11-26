@@ -61,44 +61,21 @@ const Register:React.FunctionComponent = ()=>{
         
         <section className="w-full h-100vh flex justify-center items-center">
             <Toaster position="top-right"/>
-<<<<<<< HEAD
-            <div className="w-[60%] h-full bg-white mt-40 flex justify-center items-center 2xl:flex-row xl:flex-row lg:flex-row md:flex-col-reverse sm:flex-col-reverse xs:flex-col-reverse">
-                <div className='w-full bg-gray-200 h-[100%] p-4'>
-                    <h1 className='font-Poppins text-3xl font-bold text-center h-[15%] gap-2 p-3 flex justify-center pt-4'>Register Account</h1>
-                    <form className="w-full h-full gap-2 p-3 flex justify-center items-center flex-col" onSubmit={handleSubmit}>
-                        <div className="w-full h-[8%] flex justify-between items-center mb-4">
-                            <label>First Name</label>
-                            <input type='text' value={formData.firstName} name="fullName" onChange={handleChange} placeholder="Type your first name" className="w-[70%] p-4 font-Roboto focus:outline-none" required/>
-                        </div>
-                        <div className="w-full h-[8%] flex justify-between items-center mb-4">
-                            <label>Middle Name</label>
-                            <input type='text' value={formData.middleName} name="fullName" onChange={handleChange} placeholder="Type your middle name" className="w-[70%] p-4 font-Roboto focus:outline-none"/>
-                        </div>
-                        <div className="w-full h-[8%] flex justify-between items-center mb-4">
-                            <label>Last Name</label>
-                            <input type='text' value={formData.lastName} name="fullName" onChange={handleChange} placeholder="Type your last name" className="w-[70%] p-4 font-Roboto focus:outline-none" required/>
-=======
             <div className="2xl:w-[60%] xl:w-[60%] lg:w-[80%] md:w-full sm:w-full xs:w-full h-full bg-white mt-40 flex justify-center items-center 2xl:flex-row xl:flex-row lg:flex-row md:flex-col-reverse sm:flex-col-reverse xs:flex-col-reverse">
                 <div className='w-full bg-gray-200 h-full 2xl:p-4 xl:p-4 lg:p-4 md:p-6 sm:p-8 xs:p-8'>
                     <h1 className='font-Poppins text-3xl font-bold text-center pt-4'>Register Account</h1>
                     <form className="w-full h-full gap-2 p-3 flex justify-center items-center flex-col" onSubmit={handleSubmit}>
                         <div className="w-full h-[8%] flex justify-between items-center mb-4">
                             <label className='font-Poppins'>Full Name:</label>
-                            <input type='text' value={formData.fullName} name="fullName" onChange={handleChange} placeholder="Type your first name" className="w-[70%] p-4 font-Poppins focus:outline-none" required/>
->>>>>>> 2a2ee6038236c6e581818f3a1c56622e20bd6e36
+                            <input type='text' value={formData.firstName} name="fullName" onChange={handleChange} placeholder="Type your first name" className="w-[70%] p-4 font-Poppins focus:outline-none" required/>
                         </div>
                         <div className="w-full h-[8%] flex justify-between items-center mb-4">
                             <label className='font-Poppins'>Email:</label>
                             <input type='email' value={formData.email} name="email" placeholder="Type your email" onChange={handleChange} className="w-[70%] p-4 font-Poppins focus:outline-none" required/>
                         </div>
                         <div className="w-full h-[8%] flex justify-between items-center mb-4">
-<<<<<<< HEAD
-                            <label>Telephone number</label>
-                            <input type='tel' value={formData.telephoneNumber} onChange={handleChange} name="telephoneNumber" placeholder="Type your name" className="w-[70%] p-4 font-Roboto focus:outline-none" required/>
-=======
                             <label className='font-Poppins'>Telephone number:</label>
                             <input type='tel' value={formData.telephoneNumber} onChange={handleChange} name="telephoneNumber" placeholder="Type your telephone number" maxLength={10} className="w-[70%] p-4 focus:outline-none font-Poppins" required/>
->>>>>>> 2a2ee6038236c6e581818f3a1c56622e20bd6e36
                         </div>
                         <div className="w-full h-[8%] flex justify-between items-center mb-4">
                             <label className='font-Poppins'>Date of birth:</label>
