@@ -22,11 +22,11 @@ const Header:React.FunctionComponent = ()=>{
                     
                 </ul>
             </div>
-            <div className="w-[30%] h-full flex justify-center items-center p-2">
-                <div className='w-[50%] h-full flex justify-center items-center border-black border p-3 rounded-md'>
+            <div className="2xl:w-[30%] xl:w-[30%] lg:w-[60%] md:w-[70%] sm:w-[90%] xs:w-[90%] h-full flex justify-center items-center p-2">
+                <div className='w-[50%] h-full flex justify-center items-center  p-3'>
                     <a href="/login/user" className='p-4 font-Poppins'>Log in</a>
                 </div>
-                <div className='w-full h-full flex justify-center items-center'>
+                <div className='w-full h-full flex justify-center items-center p-2'>
                     <button className='bg-black 2xl:p-3 xl:p-3 lg:p-3 md:p-3 sm:p-3 xs:p-1  2xl:w-[90%] xl:w-[50%] lg:w-[50%] md:w-[70%] sm:w-[70%] xs:w-[100%]  ml-4 rounded-xl flex justify-center items-center text-white' onClick={registerHandler}>Register Now
                         <svg className='text-white' xmlns="http://www.w3.org/2000/svg" width="2em" height="1em" viewBox="0 0 64 64">
                             <path fill="currentColor" d="M53.213 10.786c-11.715-11.715-30.711-11.715-42.426 0c-11.716 11.717-11.716 30.711 0 42.428c11.715 11.715 30.711 11.715 42.426 0c11.716-11.717 11.716-30.711 0-42.428M45 41.132l-7.585-7.414l-13.458 13.281L17 39.954l13.218-13.391l-7.343-7.564H45z" />

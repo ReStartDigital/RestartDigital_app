@@ -1,22 +1,53 @@
 /* eslint-disable react/jsx-no-undef */
 import React from "react";
 import Grid from "../Reusable/Grid";
+import { Fade } from "react-awesome-reveal";
 
 
 const Home:React.FunctionComponent = ()=>{
     return (
-        <section className="w-full h-full flex justify-center items-center flex-col">
-            <div className="relative w-full h-40vh ">
+        <section className="w-full h-full flex justify-start items-center flex-col">
+            <div className="relative w-full 2xl:h-50vh xl:h-[50%] lg:h-[50%] md:h-[50%] sm:h-[50%] xs:h-[50%] justify-center items-center flex  ">
                 <Grid/>
-                <div className="w-full h-[70%] absolute bottom-0 left-0 bg-gradient-to-t from-white to-white/25 p-3 gap-3">
-                    <div className='w-[25%] border-2 border-black rounded-full flex justify-center items-center mb-4'>
-                        <span className='font-Poppins'>The place where newbie meets masters</span>
-                    </div>
-                    <div className='w-[60%]'>
-                        <span className='capitalize font-Poppins text-6xl'>Transform your learning experience with restart digital🧐</span>
-                    </div>
-                </div>
+                    <div className="w-full p-3 2xl:h-[100%] xl:h-[100%] lg:h-[90%] md:h-full sm:h-full xs:h-full flex justify-center items-center absolute bottom-0 left-0 bg-gradient-to-t from-white to-white/25 gap-3">
+                        <div className="w-full h-full flex 2xl:flex-row xl:flex-row lg:flex-col md:flex-col sm:flex-col xs:flex-col justify-center items-center">
+                            <div className='w-full'>
+                                <div className='2xL:w-[50%] xl:w-[50%] lg:w-[80%] md:w-full sm:w-full xs:w-full  border-2 border-black rounded-full flex justify-center items-center mb-4'>
+                                    <span className='font-Poppins'>The place where newbie meets masters</span>
+                                </div>
+                                <div className='w-full'>
+                                    <Fade className="w-full" direction='up' triggerOnce>
+                                        <div className='w-full'>
+                                            <span className='capitalize font-Poppins 2xl:text-6xl xl:text-6xl lg:text-5xl md:text-5xl sm:text-4xl xs:text-4xl'>Transform your learning experience with restart digital🧐</span>
+                                        </div>
+                                    </Fade>
+                                </div>
+                            </div>
+                            <div className='2xl:w-[80%] xl:w-[80%] lg:w-[80%] md:w-full sm:w-full  xs:w-full flex justify-center items-center flex-col'>
+                                <form className='w-full flex justify-center items-center flex-col p-3 gap-4'>
+                                    <input type="text" placeholder='Search courses' className="font-Poppins p-2 w-[70%] xl:w-[70%] lg:w-[70%] md:w-full sm:w-full xs:w-full rounded-lg bg-gray-200"/>
+                                    <button type='submit' className='font-Poppins bg-black text-white p-3 2xl:w-[70%] rounded-lg shadow-sm shadow-black xl:w-[70%] lg:w-[70%] md:w-full sm:w-full xs:w-full'>Search</button>
+                                </form>
+                                <div className='w-[70%] flex justify-center items-center gap-4'>
+                                    <svg className="text-neutral-400" xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24">
+                                        <path fill="currentColor" d="M19.35 10.04A7.49 7.49 0 0 0 12 4C9.11 4 6.6 5.64 5.35 8.04A5.994 5.994 0 0 0 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5c0-2.64-2.05-4.78-4.65-4.96M10 17l-3.5-3.5l1.41-1.41L10 14.17L15.18 9l1.41 1.41z" />
+                                    </svg>
+                                    <span className='font-Poppins text-neutral-400'>Explore our well-structured IT courses.</span>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>     
             </div>
+            {/* Second stage */}
+            <div className='w-full h-50vh bg-red-500 flex justify-center items-center gap-4 p-4'>
+                <div className='w-full h-full bg-green-500'>
+                    <span className='font-Poppins text-white text-center'>Welcome to Restart Digital</span>
+                </div>
+                
+                
+            </div>
+
+            
        </section>
     )
 }

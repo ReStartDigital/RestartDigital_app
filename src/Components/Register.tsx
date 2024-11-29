@@ -1,6 +1,4 @@
 import React , { useState } from 'react';
-import person from "../assets/images/person.jpg";
-import logo from "../assets/images/logo.jpg";
 import axios from "axios";
 import { Toaster , toast } from "react-hot-toast";
 
@@ -18,6 +16,7 @@ interface User {
 }
 
 const Register:React.FunctionComponent = ()=>{
+    const [ error , setError ] = useState<string>('');
     const [ formData , setFormData ] = useState<User>(
         {
             firstName:"", // minimum of 3 and maximum of 20 required
@@ -37,8 +36,15 @@ const Register:React.FunctionComponent = ()=>{
     const handleSubmit = async(e:any)=>{
         e.preventDefault();
         try{
+            const day = new Date();
+            const birthYear = parseInt(formData.dateOfBirth.split('-')[0]);
+            const convert = day.getFullYear() - birthYear;
+            const tele = formData.telephoneNumber.length < 13 ? setError('Must include country code ') : null;
+            const first = formData.firstName.length > 3 && formData.firstName.length <= 20 ? formData.firstName : toast.error("Name length must greater than 3 characters");
             if (formData.password !== formData.confirmPassword){
                 toast.error("Passwords do not match");
+            }else if(convert < 18){
+                toast.error("Must be 18 and above");
             }else{
                 const response = await axios.post("" , formData,{ withCredentials: true }) //insert backend url here
                 console.log(response.data);
@@ -66,10 +72,11 @@ const Register:React.FunctionComponent = ()=>{
         
         <section className="w-full h-full flex justify-center items-center p-3">
             <Toaster position="top-right"/>
-            <div className="2xl:w-[40%] xl:w-[40%] lg:w-full md:w-full sm:w-full xs:w-full h-full mt-32 flex justify-center items-center 2xl:flex-row xl:flex-row lg:flex-row md:flex-col-reverse sm:flex-col-reverse xs:flex-col-reverse">
+            <div className="2xl:w-[40%] xl:w-[40%] lg:w-full md:w-full sm:w-full xs:w-full h-full  flex justify-center items-center 2xl:flex-row xl:flex-row lg:flex-row md:flex-col-reverse sm:flex-col-reverse xs:flex-col-reverse">
                 <div className='w-full bg-gray-200 rounded-md 2xl:h-full xl:h-full lg:h-full md:h-full sm:h-full xs:h-full flex justify-center items-center'>
                     <form className="w-full h-full flex-col p-3 flex justify-center items-center  gap-4" onSubmit={handleSubmit}>
                         <h1 className='font-Poppins text-3xl font-bold text-center'>Register Account</h1>
+                        <span className='text-red-500 font-Poppins text-center'>{error}</span>
                         <div className="w-full h-[8%] flex justify-between items-center flex-col">
                             <label className='font-Poppins'>First Name:</label>
                             <input type='text' value={formData.firstName} name="firstName" onChange={handleChange} placeholder="Type your first name" className="w-[70%] p-4 font-Poppins focus:outline-none" required/>
