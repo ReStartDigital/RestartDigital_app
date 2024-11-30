@@ -1,10 +1,38 @@
 /* eslint-disable react/jsx-no-undef */
-import React from "react";
+import React ,{ useEffect , useRef} from "react";
 import Grid from "../Reusable/Grid";
 import { Fade } from "react-awesome-reveal";
+import Pic from "../assets/images/collaboration.jpg";
+import Boy from "../assets/images/boy_code.jpg";
+import learn from "../assets/images/learn.jpg";
 
 
 const Home:React.FunctionComponent = ()=>{
+    const carouselRef = useRef<HTMLDivElement | null>(null);
+    
+
+    useEffect(() => {
+        const carousel = carouselRef.current;
+    
+        if (!carousel) return;
+    
+        // Duplicate items for infinite scrolling
+        const scrollInterval = setInterval(() => {
+          if (carousel) {
+            const { scrollLeft, scrollWidth, clientWidth } = carousel;
+    
+            if (scrollLeft + clientWidth >= scrollWidth) {
+              // Reset scroll to the start (to simulate infinite scroll)
+              carousel.scrollTo({ left: 0, behavior: "smooth" });
+            } else {
+              // Scroll forward by the width of one item
+              carousel.scrollBy({ left: 316, behavior: "smooth" }); // Adjust 316 to your item + margin width
+            }
+          }
+        }, 3000);
+    
+        return () => clearInterval(scrollInterval);
+      }, []);
     return (
         <section className="w-full h-full flex justify-start items-center flex-col">
             <div className="relative w-full 2xl:h-50vh xl:h-[50%] lg:h-[50%] md:h-[50%] sm:h-[50%] xs:h-[50%] justify-center items-center flex  ">
@@ -38,10 +66,64 @@ const Home:React.FunctionComponent = ()=>{
                         </div> 
                     </div>     
             </div>
+            <div className="w-full h-40vh  flex justify-center items-center p-4">
+                <div className='group w-full h-full  flex justify-center items-center gap-4 p-3 overflow-x-scroll scroll-smooth '>
+                    <div className="flex justify-center items-center w-full animate-slide gap-4 h-full">
+                        <div className="min-w-[300px] h-full bg-blue-500 flex space-x-4">
+                            <img src={Pic} className='w-full h-full object-fill' alt=""/>
+                        </div>
+                        <div className="min-w-[300px] h-full bg-blue-500 flex space-x-4 p-2 justify-start items-center flex-col">
+                            <div className="w-full bg-green-500">
+                                <span>Person</span>
+                            </div>
+                            <span>
+                                Outstanding service from start to finish! The team went above and beyond to ensure I was happy with the results. 
+                                Highly recommended!
+                            </span>
+                        </div>
+                        <div className="min-w-[300px] h-full bg-blue-500 flex space-x-4">
+                            <img src={Pic} className='w-full h-full object-fill' alt=""/>
+                        </div>
+                        <div className="min-w-[300px] h-full bg-blue-500 flex justify-start items-center flex-col space-x-4 p-2">
+                            <div className="w-full bg-green-500">
+                                <span>Person</span>
+                            </div>
+                            <span className="font-Poppins">
+                                I’ve never experienced such professionalism and attention to detail. 
+                                Their dedication to excellence is unmatched!
+                            </span>
+                        </div>
+                        <div className="min-w-[300px] h-full flex space-x-4">
+                            <img src={Boy} className='w-full h-full object-fill rounded-md' alt=""/>
+                        </div>
+                        <div className="min-w-[300px] h-full  shadow-sm shadow-gray-300 rounded-md flex space-x-4 p-2 flex-col justify-start items-center">
+                            <div className="w-full bg-green-500">
+                                <span>Person</span>
+                            </div>
+                            <span className="font-Poppins text-sm">
+                                Outstanding service from start to finish! I approached the team with a complex project, and they not only delivered but far exceeded my expectations.
+                                Their professionalism, attention to detail, and commitment to ensuring customer satisfaction were evident at every step. 
+                                
+                            </span>
+                        </div>
+                        <div className="min-w-[300px] h-full flex space-x-4">
+                            <img src={learn} className='w-full h-full object-fill' alt=""/>
+                        </div>
+                        <div className="min-w-[300px] h-full  shadow-sm shadow-gray-400 rounded-lg flex space-x-4 p-2 justify-start items-center flex-col">
+                            <div className="w-full bg-green-500">
+                                <span>Person</span>
+                            </div>
+                            <span>
+                                Customer support is exceptional! They helped me set up in minutes and answered all my questions promptly.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
             {/* Second stage */}
-            <div className='w-full h-50vh bg-red-500 flex justify-center items-center gap-4 p-4'>
+            <div className='w-full h-60vh bg-red-500 flex justify-center items-center gap-4 p-4' >
                 <div className='w-full h-full bg-green-500'>
-                    <span className='font-Poppins text-white text-center'>Welcome to Restart Digital</span>
+                    
                 </div>
                 
                 

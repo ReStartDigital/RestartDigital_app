@@ -65,8 +65,6 @@ const Register:React.FunctionComponent = ()=>{
         });
        
       };
-  
-
 
     return(
         

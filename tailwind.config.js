@@ -23,12 +23,38 @@ export default {
         '40vh':'40vh',
         '60vh':'60vh',
         '50%':'50%',
+        
+      },
+      width:{
+        '30vw':'30wh',
+        '50vw':'50wh',
       },
       fontFamily: {
         "Roboto": ["Roboto", "sans-serif"],
         "Poppins": ["Poppins", "sans-serif"],
         "RobotoCondensed": ["RobotoCondensed", "sans-serif"],
-      }
+      },
+      animation:{
+        'slide':'slide 20s linear infinite ',
+      },
+      keyframes:{
+        slide:{
+          from: {
+            transform: 'translateX(0)'
+          },
+          to:{
+            transform: 'translateX(-20%)'
+          }
+        },
+        form: {
+          from: {
+            width: '0px'
+          },
+          to: {
+            width: "100px"
+          }
+        }
+      },
     },
   },
   plugins: [],
