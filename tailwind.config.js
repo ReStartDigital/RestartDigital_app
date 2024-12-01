@@ -5,6 +5,9 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      colors:{
+        "customFirst": "#EEEEEE"
+      },
       screens:{
         'xs': "350px",
         'xx':"250px"
@@ -33,6 +36,7 @@ export default {
         "Roboto": ["Roboto", "sans-serif"],
         "Poppins": ["Poppins", "sans-serif"],
         "RobotoCondensed": ["RobotoCondensed", "sans-serif"],
+        'Lexend':['Lexend','sans-serif']
       },
       animation:{
         'slide':'slide 20s linear infinite ',
@@ -40,10 +44,10 @@ export default {
       keyframes:{
         slide:{
           from: {
-            transform: 'translateX(0)'
+            transform: 'translateX(0%)'
           },
           to:{
-            transform: 'translateX(-20%)'
+            transform: 'translateX(100%)'
           }
         },
         form: {
