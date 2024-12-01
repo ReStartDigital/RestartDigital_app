@@ -39,7 +39,7 @@ export default {
         'Lexend':['Lexend','sans-serif']
       },
       animation:{
-        'slide':'slide 20s linear infinite ',
+        'slide':'slide 20s ease-in-out infinite alternate',
       },
       keyframes:{
         slide:{
