@@ -16,19 +16,19 @@ import Learning2 from "../assets/gifs/learning2.gif";
 const Home:React.FunctionComponent = ()=>{
 
     return (
-        <section className="w-full h-full flex justify-start items-center flex-col">
-            <div className="relative w-full 2xl:h-50vh xl:h-40vh lg:h-50vh md:h-50vh sm:h-50vh xs:h-50vh justify-center items-center flex  ">
+        <section className="w-full h-full flex justify-start items-center flex-col overflow-x-hidden">
+            <div className="relative w-full 2xl:h-50vh xl:h-40vh lg:h-50vh md:h-50vh sm:h-50vh xs:h-50vh justify-center items-center flex">
                 <Grid/>
                     <div className="w-full p-3 2xl:h-[100%] xl:h-[100%] lg:h-[90%] md:h-full sm:h-full xs:h-full flex justify-center items-center absolute bottom-0 left-0 bg-gradient-to-t from-white to-white/25 gap-3">
                         <div className="w-full h-full flex 2xl:flex-row xl:flex-row lg:flex-col md:flex-col sm:flex-col xs:flex-col justify-center items-center">
                             <div className='w-full'>
-                                <div className='2xL:w-[50%] xl:w-[50%] lg:w-[80%] md:w-full sm:w-full xs:w-full  border-2 border-black rounded-full flex justify-center items-center mb-4'>
+                                <div className='2xL:w-[50%] xl:w-[50%] lg:w-[80%] md:w-full sm:w-full xs:w-full border-2 border-black rounded-full flex justify-center items-center mb-4'>
                                     <span className='font-Poppins'>The place where newbie meets masters</span>
                                 </div>
                                 <div className='w-full'>
                                     <Fade className="w-full" direction='up' triggerOnce>
                                         <div className='w-full'>
-                                            <span className='capitalize font-Poppins 2xl:text-6xl xl:text-6xl lg:text-5xl md:text-5xl sm:text-4xl xs:text-4xl'>Transform your learning experience with restart digital🧐</span>
+                                            <span className='capitalize font-Poppins 2xl:text-6xl xl:text-6xl lg:text-5xl md:text-4xl sm:text-3xl xs:text-3xl'>Transform your learning experience with restart digital🧐</span>
                                         </div>
                                     </Fade>
                                 </div>
@@ -186,20 +186,20 @@ const Home:React.FunctionComponent = ()=>{
                 </div>
             </div>
             {/* Second stage */}
-            <div className='w-full h-40vh  flex justify-center items-center gap-4 p-4' >
+            <div className='w-full 2xl:h-40vh xl:h-40vh lg:h-30vh md:h-30vh sm:h-30vh xs:h-30vh flex 2xl:flex-row xl:flex-row lg:flex-row md:flex-col sm:flex-col xs:flex-col justify-center items-center gap-4 p-4' >
                 <div className='w-full h-full flex justify-center items-center'>
-                    <span className='font-Lexend text-7xl'>There is nothing stopping you from becoming a master</span>
+                    <span className='font-Lexend 2xl:text-7xl xl:text-7xl lg:text-5xl md:text-5xl sm:text-4xl xs:text-4xl'>There is nothing stopping you from becoming a master</span>
                 </div>
-                <div className='w-[30%] h-full flex justify-center items-center'>
+                <div className='2xl:w-[30%] xl:w-[30%] lg:w-[50%] md:w-full sm:w-full xs:w-full h-full flex justify-center items-center'>
                     <button className='border-2 border-black font-Poppins text-black rounded-md p-3'>Explore our courses</button>
                 </div>
             </div>
 
             {/* Third section */}
-            <div className='w-full h-60vh p-4 flex justify-center items-center'>
-                <div className="w-full h-full bg-customFirst rounded-md p-4 flex justify-center items-center gap-4">
-                    <div className='w-full h-full gap-4 flex justify-center items-center'>
-                        <div className="w-full h-full flex justify-center items-center flex-col">
+            <div className='w-full 2xl:h-60vh xl:h-60vh lg:h-60vh md:h-full sm:h-full xs:h-full p-4 flex justify-center items-center'>
+                <div className="w-full h-full bg-customFirst rounded-md p-4 flex justify-center items-center gap-4 2xl:flex-row xl:flex-row lg:flex-row md:flex-col sm:flex-col xs:flex-col">
+                    <div className='w-full h-full gap-4 flex justify-center items-center 2xl:overflow-hidden xl:overflow-hidden lg:overflow-hidden md:overflow-x-scroll sm:overflow-x-scroll xs:overflow-x-scroll'>
+                        <div className="2xl:w-full xl:w-full lg:w-full md:w-full sm:min-w-[200px] xs:min-w-[200px] h-full flex justify-center items-center flex-col">
                             <div className="w-full h-[20%] flex justify-center items-center">
                                 <svg className='text-orange-400' xmlns="http://www.w3.org/2000/svg" width="17" height="20" viewBox="0 0 24 24">
                                     <path fill="currentColor" d="M18.483 16.767A8.5 8.5 0 0 1 8.118 7.081a1 1 0 0 1-.113.097c-.28.213-.63.292-1.33.45l-.635.144c-2.46.557-3.69.835-3.983 1.776c-.292.94.546 1.921 2.223 3.882l.434.507c.476.557.715.836.822 1.18c.107.345.071.717-.001 1.46l-.066.677c-.253 2.617-.38 3.925.386 4.506s1.918.052 4.22-1.009l.597-.274c.654-.302.981-.452 1.328-.452s.674.15 1.329.452l.595.274c2.303 1.06 3.455 1.59 4.22 1.01c.767-.582.64-1.89.387-4.507z"/>
@@ -208,21 +208,43 @@ const Home:React.FunctionComponent = ()=>{
                                 <span className="capitalize font-Poppins text-orange-400">restart digital category. </span>
                             </div>
                             <div className='w-full h-full flex justify-center items-center'>
-                                <span className="w-full font-Poppins text-center text-black text-3xl capitalize">find the course you are most interested in, just today!</span>
+                                <span className="w-full font-Poppins text-center text-black 2xl:text-3xl xl:text-3xl lg:text-3xl md:text-2xl sm:text-xl xs:text-md capitalize">find the course you are most interested in, just today!</span>
                             </div>
                             <div className="w-full h-[50%]  flex justify-center items-center">
                                 <button className="w-[90%] p-3 bg-black text-white font-Poppins rounded-xl">Join our first course</button>
                             </div>
                         </div>
-                        <div className="w-full bg-yellow-400 h-full">
-                            <img src={Learning1} alt=''/>
+                        <div className="2xl:w-full xl:w-full lg:w-full md:w-full sm:min-w-[200px] xs:min-w-[200px] bg-white h-full flex justify-center items-center flex-col p-2 rounded-md">
+                            <div className="w-full h-full flex justify-center items-center">
+                                <span className="font-Lexend text-black text-xl  text-center capitalize">Become a good developer</span>
+                            </div>
+                            <div className="w-full h-full flex justify-center items-center">
+                                <span className="text-xs font-Poppins text-center">
+                                    Master foundational programming concepts, write clean, maintainable code, and embrace best practices
+                                </span>
+                            </div>
+                            <div className='w-full h-[80%]'>
+                               <img src={Learning1} className="w-full h-full" alt=''/> 
+                            </div>
+                            
                         </div>
-                        <div className="w-full bg-yellow-400 h-full">
-                            <img src={Learning2} alt=''/>
+                        <div className="2xl:w-full xl:w-full lg:w-full md:w-full sm:min-w-[200px] xs:min-w-[200px] bg-white h-full flex justify-center items-center flex-col p-2 rounded-md">
+                            <div className="w-full h-full flex justify-center items-center">
+                                <span className="font-Lexend text-black text-xl  text-center capitalize">Become a problem solver</span>
+                            </div>
+                            <div className="w-full h-full flex justify-center items-center">
+                                <span className="text-xs font-Poppins text-center">
+                                    Becoming a good developer requires continuous learning, problem-solving skills, and adaptability.
+                                </span>
+                            </div>
+                            <div className='w-full h-[80%]'>
+                               <img src={Learning2} className="w-full h-full" alt=''/> 
+                            </div>
                         </div>
                     </div>
-                    <div className='w-[50%] h-full '>
+                    <div className='2xl:w-[50%] xl:w-[50%] lg:w-[70%] md:w-full sm:w-full xs:w-full h-full flex justify-centeritems-center flex-col '>
                         <PieWithCircles/>
+                        
                     </div>
                 </div>
             </div>

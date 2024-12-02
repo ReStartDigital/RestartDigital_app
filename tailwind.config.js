@@ -6,7 +6,9 @@ export default {
   theme: {
     extend: {
       colors:{
-        "customFirst": "#EEEEEE"
+        "customFirst": "#EEEEEE",
+        "custBrown":"#F7C986",
+        "lightBrown":"#ECE7DE"
       },
       screens:{
         'xs': "350px",
@@ -39,7 +41,7 @@ export default {
         'Lexend':['Lexend','sans-serif']
       },
       animation:{
-        'slide':'slide 20s ease-in-out infinite alternate',
+        'slide':'slide 20s infinite linear alternate',
       },
       keyframes:{
         slide:{

@@ -4,8 +4,8 @@ import persons from "../assets/images/person4.jpg";
 
 const Blog:React.FunctionComponent = ()=>{
     return (
-        <section className="w-full h-100vh mb-10 bg-white flex justify-center items-center gap-4 2xl:p-4 xl:p-4 lg:p-2 md:p-0 sm:p-0 xs:p-0 flex-col">
-            <div className='bg-white w-full h-[55%] 2xl:mt-36 xl:mt-36 lg:mt-36 md:mt-30 sm:mt-30 xs:mt-28 p-4 gap-4 flex justify-center items-center'>
+        <section className="w-full h-100vh bg-white flex justify-center items-center gap-4 2xl:p-4 xl:p-4 lg:p-2 md:p-0 sm:p-0 xs:p-0 flex-col">
+            <div className='bg-white w-full h-[55%] p-4 gap-4 flex justify-center items-center'>
                 <div className='w-full h-full '>
                     <img src={persons} alt="person" className='w-full h-full object-cover'/>
                 </div>

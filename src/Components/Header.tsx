@@ -8,7 +8,7 @@ const Header:React.FunctionComponent = ()=>{
      }
 
     return (
-        <section className='w-full h-10vh bg-white flex 2xl:justify-center z-30 xl:justify-center lg:justify-center md:justify-between xs:justify-between  items-center gap-5  p-1'>
+        <section className='w-full h-10vh bg-white flex 2xl:justify-center z-30 xl:justify-center lg:justify-center md:justify-between xs:justify-between  items-center gap-5  p-1 overflow-x-hidden'>
             <div className="w-full h-full flex justify-center items-center">       
                 
                 <ul className='w-full h-full flex justify-start items-center p-4'>
