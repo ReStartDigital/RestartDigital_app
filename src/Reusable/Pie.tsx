@@ -1,8 +1,8 @@
 import React from "react";
 
-const NestedCircles = () => {
+const NestedCircles:React.FunctionComponent = () => {
   return (
-    <div className="w-full flex justify-center items-center h-full bg-lightBrown flex-col">
+    <div className="2xl:w-full xl:w-full lg:w-full md:w-full sm:min-w-[200px] xs:min-w-[200px] flex justify-center items-center h-full bg-lightBrown flex-col">
       <div className="w-full h-full flex justify-center items-center relative">
         {/* Outer Circle */}
         <div className="w-[80%] h-[100%] border border-dashed border-neutral-400 rounded-full flex justify-center items-center">
@@ -30,9 +30,7 @@ const NestedCircles = () => {
             <button className="p-3 bg-black text-white font-Poppins rounded-2xl capitalize">connect with a restart member</button>
         </div>
       </div>
-        
-      </div>
-                   
+      </div>          
   );
 };
 

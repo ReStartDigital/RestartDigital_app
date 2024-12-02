@@ -28,6 +28,7 @@ export default {
         '40vh':'40vh',
         '60vh':'60vh',
         '50%':'50%',
+        '120vh':'120vh',
         
       },
       width:{
