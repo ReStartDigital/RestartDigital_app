@@ -8,6 +8,8 @@ const Preview:React.FunctionComponent = ()=>{
                     <li><a href="/courses" className='p-4 font-Poppins text-black flex'>Courses</a></li>
                     <li><a href="#about" className='p-4 font-Poppins text-black flex'>About Us</a></li>
                     <li><a href="/blog" className='p-4 font-Poppins text-black flex'>Blog</a></li>
+                    <li><a href="/login/user" className='p-4 font-Poppins text-black flex'>Log in</a></li>
+                    <li><a href="/register/user" className='p-4 font-Poppins text-black flex'>Sign up</a></li>
                 </ul>
         </section>
     )
