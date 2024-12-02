@@ -28,7 +28,7 @@ const Course:React.FunctionComponent = ()=>{
                     </div>
                 </div>
                 <div className='w-[80%] h-full flex justify-start items-start flex-col p-5 gap-6'>
-                    <div className='w-[50%] border-2 border-black rounded-3xl p-2 flex justify-center items-center'>
+                    <div className='w-[40%] border-2 border-black rounded-3xl p-2 flex justify-center items-center'>
                         <span className='font-Poppins'>Why you need restart digital</span>
                     </div>
                     <div className='w-full'>
