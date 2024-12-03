@@ -1,30 +1,116 @@
-import React  from 'react';
+import React , { useEffect , useState } from 'react';
 import Backend from "../assets/images/backend.jpg";
+import Design from "../assets/images/design.jpg";
+import { Fade } from 'react-awesome-reveal';
+import axios from 'axios';
+import CourseDetails from '../Reusable/CourseDetails';
 
+
+export type Inner ={
+    course_info1: string;
+    course_info2:string;
+    course_starred:number;
+    author:string;
+}
+
+export interface Data {
+    course_name: string;
+    image_path:string;
+    course_description: Inner
+}
 const Course:React.FunctionComponent = ()=>{
+    const [ data , setData ] = useState<Data[]>([]);
+    useEffect(()=>{
+        async function fetchData(){
+            try{
+                const response = await axios.get("/jsons/courses.json");
+                console.log(response.data);
+                setData(response.data);
+            }catch(error){
+                console.log(error);
+            }
+        }
+
+        fetchData();
+    },[])
     
     return (
-       <section className='w-full h-80vh flex justify-center items-center p-4'>
-            <div className='w-full h-full flex justify-center items-center gap-4'>
-                <div className='w-full h-full bg-blue-500 flex justify-center items-center p-4 gap-4'>
-                    <div className='w-[80%] h-full bg-gray-200 rounded-xl flex justify-start itetms-center flex-col -rotate-6'>
+       <section className='w-full h-full flex justify-center items-center p-4 flex-col'>
+            <div className='w-full h-80vh flex justify-center items-center gap-4'>
+                <div className='relative w-full h-full flex justify-center items-center p-6 gap-4'>
+                    <div className='absolute top-40 left-0 bg-pink-300 rounded-full w-[60%] h-[80%]'></div>
+                    <div className='absolute top-0 right-0 bg-violet-300 rounded-full w-[60%] h-[80%]'></div>
+                    <div className='w-[60%] h-full bg-gray-100 rounded-xl flex justify-start itetms-center flex-col -rotate-6'>
                         <div className='w-full h-[40%] rounded-t-xl'>
                             <img src={Backend} className='w-full h-full object-cover rounded-t-xl' alt=''/>
                         </div>
                         <div className='w-full flex justify-center items-center p-2'>
-                            <span className='font-Poppins text-xl text-center font-bold capitalize'>Build a secure backend application tailored to real world software principles</span>
+                            <span className='font-Poppins text-xl font-bold capitalize'>Build a secure backend application tailored to real world software principles</span>
                         </div>
                         <div className='w-full flex justify-center items-center p-2'>
-                            <span className='font-Poppins text-xs text-center capitalize'>
+                            <span className='font-Poppins text-xs capitalize'>
                                 Build a secure backend application tailored to real world software principles.
                                 Implementing micro-services to impove tthe functionality of servers and making servers 
                                 more performant.
                             </span>
                         </div>
-                        
+                        <div className='w-full p-2'>
+                            <span className='font-Poppins'>By: Samuel</span>
+                        </div>
+                        <div className='w-full p-2 flex justify-start items-start'>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <path fill="currentColor" d="M12 4c4.411 0 8 3.589 8 8s-3.589 8-8 8s-8-3.589-8-8s3.589-8 8-8m0-2C6.477 2 2 6.477 2 12s4.477 10 10 10s10-4.477 10-10S17.523 2 12 2m3.8 13.4L13 11.667V7h-2v5.333l3.2 4.266z"/>
+                            </svg>
+                            <span className='font-Poppins text-slate-400'>Lesson Time: About 6hrs</span>
+                        </div>
+                        <div className='flex justify-start items-start p-2 gap-3'>
+                            <div className='w-full border-2 border-black flex justify-center items-center'>
+                                <span className='font-Poppins uppercase'>free</span>
+                            </div>
+                            <div className='w-full border-2 border-black flex justify-center items-center'>
+                                <span className='font-Poppins uppercase'>course</span>
+                            </div>
+                            <div className='w-full border-2 border-black flex justify-center items-center'>
+                                <span className='font-Poppins uppercase'>beginner</span>
+                            </div>
+                        </div>
                     </div>
-                    <div className='w-full h-full bg-gray-200'>
-                        <span>Hello world</span>
+
+                    {/* Next rotate */}
+                    <div className='w-[60%] h-full bg-gray-100 rounded-xl flex justify-start itetms-center flex-col rotate-6'>
+                        <div className='w-full h-[40%] rounded-t-xl'>
+                            <img src={Design} className='w-full h-full object-cover rounded-t-xl' alt=''/>
+                        </div>
+                        <div className='w-full flex justify-center items-center p-2'>
+                            <span className='font-Poppins text-xl font-bold capitalize'>memorable UI design for interactive experiences.</span>
+                        </div>
+                        <div className='w-full flex justify-center items-center p-2'>
+                            <span className='font-Poppins text-xs capitalize'>
+                                Build an interactive UI/UX design with figma or adobe photoshop for cultured to industrial standards and 
+                                improve the user interface and user experience of modern applications from our professionals.And gain more
+                                experience.
+                            </span>
+                        </div>
+                        <div className='w-full p-2'>
+                            <span className='font-Poppins'>By: Zadock</span>
+                        </div>
+                        <div className='w-full p-2 flex justify-start items-start'>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <path fill="currentColor" d="M12 4c4.411 0 8 3.589 8 8s-3.589 8-8 8s-8-3.589-8-8s3.589-8 8-8m0-2C6.477 2 2 6.477 2 12s4.477 10 10 10s10-4.477 10-10S17.523 2 12 2m3.8 13.4L13 11.667V7h-2v5.333l3.2 4.266z"/>
+                            </svg>
+                            <span className='font-Poppins text-slate-400'>Lesson Time: About 6hrs</span>
+                        </div>
+                        <div className='flex justify-start items-start p-2 gap-3'>
+                            <div className='w-full border-2 border-black flex justify-center items-center'>
+                                <span className='font-Poppins uppercase'>free</span>
+                            </div>
+                            <div className='w-full border-2 border-black flex justify-center items-center'>
+                                <span className='font-Poppins uppercase'>course</span>
+                            </div>
+                            <div className='w-full border-2 border-black flex justify-center items-center'>
+                                <span className='font-Poppins uppercase'>beginner</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div className='w-[80%] h-full flex justify-start items-start flex-col p-5 gap-6'>
@@ -38,7 +124,6 @@ const Course:React.FunctionComponent = ()=>{
                         <span className='font-Poppins text-black'>
                             Explore wide range of courses and boatcamps on Restart Digital. Whatever you are looking to develop now skills or advance your career,we have something for everyone.
                             choose what you like and start learning to do.
-
                         </span>
                     </div>
                     <div className='w-full'>
@@ -59,7 +144,25 @@ const Course:React.FunctionComponent = ()=>{
                         <button className='font-Poppins p-4 rounded-2xl text-white bg-black'>Explore restart</button>
                     </div>
                 </div>
-               
+            </div>
+            <div className='w-full h-40vh flex justify-center items-center p-4'>
+                <Fade className='w-full h-full flex justify-center items-center' direction='left' triggerOnce>
+                    <div className='w-[80%] h-full flex justify-center items-center'>
+                        <span className='text-6xl font-Poppins'>There is nothing that limits you from wanting to learn whatever you want</span>
+                    </div>
+                </Fade>
+            </div>
+            <div className='w-full p-4 flex justify-center items-center overflow-hidden'>
+                <div className='container w-[80%] h-auto gap-4 grid grid-cols-[repeat(auto-fit,minmax(280px,1fr))]  p-4'>
+                    {
+                        data.map((item)=>(
+                            <CourseDetails 
+                            course_name={item.course_name} 
+                            image_path={item.image_path} 
+                            course_description={item.course_description}/>
+                        ))
+                    }
+                </div>
             </div>
        </section>
     )
