@@ -3,7 +3,7 @@ import axios from "axios";
 import { Fade } from "react-awesome-reveal";
 import Team, { Teams } from "../Reusable/Team";
 
-const About = ()=>{
+const About:React.FC = ()=>{
     const [ data , setData ] = useState<Teams[]>([]);
     useEffect(()=>{
         async function fetchData(){
