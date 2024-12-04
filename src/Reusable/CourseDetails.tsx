@@ -6,7 +6,7 @@ import { Data } from '../Components/Courses';
 const CourseDetails:React.FunctionComponent<Data> = ({ course_name , image_path , course_description })=>{
     return(
         <div className='w-full h-[590px] m-0 shadow-md shadow-gray-200 bg-white rounded-xl flex justify-start items-center flex-col'>
-            <div className='w-full h-[45%] rounded-t-xl'>
+            <div className='w-full 2xl:h-[45%] xl:h-[45%] lg:h-[45%] md:h-[35%] sm:h-[35%] xs:h-[35%]  rounded-t-xl'>
                 <img src={image_path} className='w-full h-full object-cover rounded-t-xl' alt=''/>
             </div>
             <div className='w-full flex justify-center items-center p-2'>

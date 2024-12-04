@@ -36,11 +36,11 @@ const Course:React.FunctionComponent = ()=>{
     
     return (
        <section className='w-full h-full flex justify-center items-center p-4 flex-col'>
-            <div className='w-full h-80vh flex justify-center items-center gap-4'>
-                <div className='relative w-full h-full flex justify-center items-center p-6 gap-4'>
+            <div className='w-full 2xl:h-80vh xl:h-80vh lg:h-80vh  md:h-full sm:h-full xs:h-full flex 2x:flex-row xl:flex-row lg:flex-row md:flex-col sm:flex-col xs:flex-col justify-center items-center gap-4'>
+                <div className='relative w-full h-full flex justify-center items-center p-6 gap-4 2x:flex-row xl:flex-row lg:flex-row md:flex-col sm:flex-col xs:flex-col'>
                     <div className='absolute top-40 left-0 bg-pink-300 rounded-full w-[60%] h-[80%]'></div>
                     <div className='absolute top-0 right-0 bg-violet-300 rounded-full w-[60%] h-[80%]'></div>
-                    <div className='w-[60%] h-full bg-gray-100 rounded-xl flex justify-start itetms-center flex-col -rotate-6'>
+                    <div className='2xl:w-[60%] xl:w-[60%] lg:w-[60%] md:w-full sm:w-full xs:w-full  h-full bg-gray-100 rounded-xl flex justify-start itetms-center flex-col -rotate-6'>
                         <div className='w-full h-[40%] rounded-t-xl'>
                             <img src={Backend} className='w-full h-full object-cover rounded-t-xl' alt=''/>
                         </div>
@@ -77,7 +77,7 @@ const Course:React.FunctionComponent = ()=>{
                     </div>
 
                     {/* Next rotate */}
-                    <div className='w-[60%] h-full bg-gray-100 rounded-xl flex justify-start itetms-center flex-col rotate-6'>
+                    <div className='2xl:w-[60%] xl:w-[60%] lg:w-[60%] md:w-full sm:w-full xs:w-full h-full bg-gray-100 rounded-xl flex justify-start itetms-center flex-col rotate-6'>
                         <div className='w-full h-[40%] rounded-t-xl'>
                             <img src={Design} className='w-full h-full object-cover rounded-t-xl' alt=''/>
                         </div>
@@ -113,8 +113,8 @@ const Course:React.FunctionComponent = ()=>{
                         </div>
                     </div>
                 </div>
-                <div className='w-[80%] h-full flex justify-start items-start flex-col p-5 gap-6'>
-                    <div className='w-[40%] border-2 border-black rounded-3xl p-2 flex justify-center items-center'>
+                <div className='2xl:w-[80%] xl:w-[80%] lg:w-[80%] md:w-full sm:w-full xs:w-full h-full flex justify-start items-start flex-col p-5 gap-6'>
+                    <div className='2xl:w-[40%] xl:w-[40%] lg:w-[60%] md:w-full sm:w-full xs:w-full h-[10%] border-2 border-black rounded-3xl p-2 flex justify-center items-center'>
                         <span className='font-Poppins'>Why you need restart digital</span>
                     </div>
                     <div className='w-full'>
@@ -145,15 +145,15 @@ const Course:React.FunctionComponent = ()=>{
                     </div>
                 </div>
             </div>
-            <div className='w-full h-40vh flex justify-center items-center p-4'>
+            <div className='w-full 2xl:h-40vh xl:h-40vh lg:h-40vh md:30vh sm:h-30vh xs:h-30vh flex justify-center items-center p-4'>
                 <Fade className='w-full h-full flex justify-center items-center' direction='left' triggerOnce>
-                    <div className='w-[80%] h-full flex justify-center items-center'>
-                        <span className='text-6xl font-Poppins'>There is nothing that limits you from wanting to learn whatever you want</span>
+                    <div className='2xl:w-[80%] xl:w-[80%] lg:w-[80%] md:w-full sm:w-full xs:w-full  h-full flex justify-center items-center'>
+                        <span className='2xl:text-6xl xl:text-6xl lg:text-5xl md:text-4xl sm:text-3xl xs:text-3xl font-Poppins'>There is nothing that limits you from wanting to learn whatever you want</span>
                     </div>
                 </Fade>
             </div>
             <div className='w-full p-4 flex justify-center items-center overflow-hidden'>
-                <div className='container w-[80%] h-auto gap-4 grid grid-cols-[repeat(auto-fit,minmax(280px,1fr))]  p-4'>
+                <div className='container 2xl:w-[80%] xl:w-[80%] lg:w-[80%] md:w-full sm:w-full xs:w-full h-auto gap-4 grid grid-cols-[repeat(auto-fit,minmax(280px,1fr))]  p-4'>
                     {
                         data.map((item)=>(
                             <CourseDetails 
