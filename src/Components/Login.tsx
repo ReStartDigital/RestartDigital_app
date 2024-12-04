@@ -1,7 +1,6 @@
 import React , { useState }  from 'react';
-import person from "../assets/images/person.jpg";
 import axios from "axios";
-import { Toaster , toast } from 'react-hot-toast';
+
 
 
 
