@@ -21,7 +21,7 @@ const Header:React.FunctionComponent = ()=>{
                     </div>
                     <li><a href="/" className='p-4 font-Poppins active:text-orange-400 active:underline 2xl:flex xl:flex lg:flex md:hidden sm:hidden xs:hidden '>Home</a></li>
                     <li><a href="/courses" className='p-4 font-Poppins 2xl:flex xl:flex lg:flex md:hidden sm:hidden xs:hidden '>Courses</a></li>
-                    <li><a href="#about" className='p-4 font-Poppins 2xl:flex xl:flex lg:flex md:hidden sm:hidden xs:hidden '>About Us</a></li>
+                    <li><a href="/about/team" className='p-4 font-Poppins 2xl:flex xl:flex lg:flex md:hidden sm:hidden xs:hidden '>About Us</a></li>
                     <li><a href="/blog" className='p-4 font-Poppins 2xl:flex xl:flex lg:flex md:hidden sm:hidden xs:hidden '>Blog</a></li>
                     
                 </ul>

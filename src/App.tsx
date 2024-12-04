@@ -7,7 +7,7 @@ import Course from './Components/Courses';
 import Blog from './Components/Blog';
 import Login from "./Components/Login";
 import Register from "./Components/Register";
-
+import About from "./Components/About";
 
 
 const App:React.FunctionComponent = ()=>{
@@ -21,6 +21,7 @@ const App:React.FunctionComponent = ()=>{
               <Route path='/blog' element={<Blog/>}/>
               <Route path="/login/user" element={<Login/>} />
               <Route path="/register/user" element={<Register/>}/>
+              <Route path='/about/team' element={<About/>}/>
           </Routes>
       </Router>
   </>

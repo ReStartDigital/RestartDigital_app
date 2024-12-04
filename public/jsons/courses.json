@@ -26,7 +26,7 @@
         "course_name": "Backend Dev",
         "image_path": "image/backend.jpg",
         "course_description":{
-            "author":"Baffour Samuel",
+            "author":"Baffour Samuel Amoh",
             "course_starred": 5.0,
             "course_info1": "Backend development focuses on building and maintaining the server-side of applications, ensuring efficient data management, security, and communication with the frontend. It involves using programming languages like Python, Java, or Node.js, along with databases. Backend developers create APIs, implement business logic, and optimize systems for performance, enabling seamless user experiences."
            
@@ -37,7 +37,7 @@
         "course_name": "Java Programming Language",
         "image_path": "image/data.jpg",
         "course_description":{
-            "author":"Baffour Samuel",
+            "author":"Baffour Samuel Amoh",
             "course_starred": 5.0,
             "course_info1": "Java is a versatile, object-oriented programming language widely used for developing robust applications. Known for its platform independence through the (Write Once, Run Anywhere) principle, Java supports multithreading, networking, and security features. Its vast libraries and frameworks make it ideal for web, mobile, and enterprise solutions, fostering innovation and scalability."
         } 
