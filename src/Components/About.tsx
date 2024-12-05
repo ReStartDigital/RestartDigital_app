@@ -8,9 +8,11 @@ import Person4 from "../assets/images/group4.jpg";
 
 const About:React.FC = ()=>{
     const [ data , setData ] = useState<Teams[]>([]);
+
     const style: React.CSSProperties = {
         clipPath: 'polygon(0 0, 80% 0, 100% 20%, 100% 100%, 0 100%)',
       };
+      
     useEffect(()=>{
         async function fetchData(){
             try{
@@ -55,13 +57,13 @@ const About:React.FC = ()=>{
                     }
                 </div>
             </div>
-            <div className="w-full h-30vh flex justify-center items-center  p-4">
+            <div className="w-full 2xl:h-30vh xl:h-30vh lg:h-30vh md:h-20vh sm:h-20vh xs:h-20vh flex justify-center items-center  p-4">
                     <div className='w-full h-full flex justify-start items-center'>
-                        <span className='text-7xl font-Lexend capitalize'>Previous years of restart digital</span>
+                        <span className='2xl:text-7xl xl:text-7xl lg:text-5xl md:text-5xl sm:text-4xl xs:text-4xl font-Lexend capitalize'>Previous years of restart digital</span>
                     </div>
             </div>
-            <div className='w-full h-full flex justify-center items-center p-4 gap-4- bg-gray-100'>
-                <div className="w-[80%] h-full  rounded-lg flex justify-center items-center flex-col p-4">
+            <div className='w-full h-full flex 2xl:flex-row xl:flex-row lg:flex-row md:flex-col sm:flex-col xs:flex-col justify-center items-center 2xl:p-4 xl:p-4 lg:p-4 md:p-0 sm:p-0 xs:p-0 gap-4- bg-gray-100'>
+                <div className="2xl:w-[80%] xl:w-[80%] lg:w-[80%] md:w-full sm:w-full xs:w-full h-full  rounded-lg flex justify-center items-center flex-col 2xl:p-4 xl:p-4 lg:p-4 md:p-0 sm:p-0 xs:p-0 ">
                     <div className='w-full flex justify-start items-center p-4'>
                         <span className='font-Poppins font-bold text-2xl'>Restart Digital events in the years</span>
                     </div>
