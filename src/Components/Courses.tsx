@@ -11,6 +11,7 @@ export type Inner ={
     course_info2:string;
     course_starred:number;
     author:string;
+    hours:number;
 }
 
 export interface Data {
@@ -165,7 +166,8 @@ const Course:React.FunctionComponent = ()=>{
                             <CourseDetails 
                             course_name={item.course_name} 
                             image_path={item.image_path} 
-                            course_description={item.course_description}/>
+                            course_description={item.course_description}
+                            />
                         ))
                     }
                 </div>

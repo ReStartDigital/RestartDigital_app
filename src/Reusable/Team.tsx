@@ -6,10 +6,11 @@ export interface Teams {
     name:string;
     linkedin_account?:string;
     position:string;
-    info:string
+    info:string;
+    
 }
 
-const Team:React.FunctionComponent<Teams> =({ name , position , image_path , linkedin_account , info})=>{
+const Team:React.FunctionComponent<Teams> =({ name , position , image_path , linkedin_account , info })=>{
 
     const handleClick = ()=>{
         window.open(`${linkedin_account}`, '_blank' , 'noopener,noreferrer');

@@ -32,7 +32,7 @@ const CourseDetails:React.FunctionComponent<Data> = ({ course_name , image_path 
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                     <path fill="currentColor" d="M12 4c4.411 0 8 3.589 8 8s-3.589 8-8 8s-8-3.589-8-8s3.589-8 8-8m0-2C6.477 2 2 6.477 2 12s4.477 10 10 10s10-4.477 10-10S17.523 2 12 2m3.8 13.4L13 11.667V7h-2v5.333l3.2 4.266z"/>
                 </svg>
-                <span className='font-Poppins text-slate-400'>Lesson Time: About 6hrs</span>
+                <span className='font-Poppins text-slate-400'>Lesson Time: About {course_description.hours} hrs</span>
             </div>
         <div className='flex justify-start items-start p-2 gap-3 w-full'>
             <div className='w-full border-2 border-black flex justify-center items-center'>
