@@ -1,5 +1,5 @@
 /* eslint-disable react/jsx-no-undef */
-import React  from "react";
+import React , { useRef } from "react";
 import Grid from "../Reusable/Grid";
 import { Fade } from "react-awesome-reveal";
 import Pic from "../assets/images/collaboration.jpg";
@@ -14,6 +14,17 @@ import Learning1 from "../assets/gifs/learnning1.gif";
 import Learning2 from "../assets/gifs/learning2.gif";
 
 const Home:React.FunctionComponent = ()=>{
+    const inputRef: any = useRef(null);
+
+    const handleSearch = (event:React.MouseEvent<HTMLButtonElement>):void=>{
+        event.preventDefault();
+        const result = inputRef.current?.value;
+        console.log(result);
+    }
+
+    const handleExplore = ():void=>{
+        window.location.href = "/courses";
+    }
 
     return (
         <section className="w-full h-full flex justify-start items-center flex-col overflow-x-hidden">
@@ -35,8 +46,8 @@ const Home:React.FunctionComponent = ()=>{
                             </div>
                             <div className='2xl:w-[80%] xl:w-[80%] lg:w-[80%] md:w-full sm:w-full  xs:w-full flex justify-center items-center flex-col'>
                                 <form className='w-full flex justify-center items-center flex-col p-3 gap-4'>
-                                    <input type="text" placeholder='Search courses' className="font-Poppins p-2 w-[70%] xl:w-[70%] lg:w-[70%] md:w-full sm:w-full xs:w-full rounded-lg bg-gray-200"/>
-                                    <button type='submit' className='font-Poppins bg-black text-white p-3 2xl:w-[70%] rounded-lg shadow-sm shadow-black xl:w-[70%] lg:w-[70%] md:w-full sm:w-full xs:w-full'>Search</button>
+                                    <input type="text" ref={inputRef} placeholder='Search courses' className="font-Poppins p-2 w-[70%] xl:w-[70%] lg:w-[70%] md:w-full sm:w-full xs:w-full rounded-lg bg-gray-200"/>
+                                    <button type='submit' className='font-Poppins bg-black text-white p-3 2xl:w-[70%] rounded-lg shadow-sm shadow-black xl:w-[70%] lg:w-[70%] md:w-full sm:w-full xs:w-full' onClick={handleSearch}>Search</button>
                                 </form>
                                 <div className='w-[70%] flex justify-center items-center gap-4'>
                                     <svg className="text-neutral-400" xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24">
@@ -191,7 +202,7 @@ const Home:React.FunctionComponent = ()=>{
                     <span className='font-Lexend 2xl:text-7xl xl:text-7xl lg:text-5xl md:text-5xl sm:text-4xl xs:text-4xl'>There is nothing stopping you from becoming a master</span>
                 </div>
                 <div className='2xl:w-[30%] xl:w-[30%] lg:w-[50%] md:w-full sm:w-full xs:w-full h-full flex justify-center items-center'>
-                    <button className='border-2 border-black font-Poppins text-black rounded-md p-3'>Explore our courses</button>
+                    <button className='border-2 border-black font-Poppins text-black rounded-md p-3' onClick={handleExplore}>Explore our courses</button>
                 </div>
             </div>
 

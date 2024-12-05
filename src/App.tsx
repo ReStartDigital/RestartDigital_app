@@ -8,6 +8,7 @@ import Blog from './Components/Blog';
 import Login from "./Components/Login";
 import Register from "./Components/Register";
 import About from "./Components/About";
+import Footer from "./Components/Footer";
 
 
 const App:React.FunctionComponent = ()=>{
@@ -24,6 +25,7 @@ const App:React.FunctionComponent = ()=>{
               <Route path='/about/team' element={<About/>}/>
           </Routes>
       </Router>
+      <Footer/>
   </>
   );
 }

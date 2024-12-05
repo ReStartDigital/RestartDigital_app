@@ -34,9 +34,15 @@ const Course:React.FunctionComponent = ()=>{
         fetchData();
     },[])
     
+
+    const handleClicks = ()=>{
+        console.log("Explore button clicked");
+    }
+
+
     return (
        <section className='w-full h-full flex justify-center items-center p-4 flex-col'>
-            <div className='w-full 2xl:h-80vh xl:h-80vh lg:h-80vh  md:h-full sm:h-full xs:h-full flex 2x:flex-row xl:flex-row lg:flex-row md:flex-col sm:flex-col xs:flex-col justify-center items-center gap-4'>
+            <div className='2xl:w-full xl:w-full lg:w-[90%] md:w-[90%] sm:w-full xs:w-full 2xl:h-80vh xl:h-80vh lg:h-80vh  md:h-full sm:h-full xs:h-full flex 2x:flex-row xl:flex-row lg:flex-row md:flex-col sm:flex-col xs:flex-col justify-center items-center gap-4'>
                 <div className='relative w-full h-full flex justify-center items-center p-6 gap-4 2x:flex-row xl:flex-row lg:flex-row md:flex-col sm:flex-col xs:flex-col'>
                     <div className='absolute top-40 left-0 bg-pink-300 rounded-full w-[60%] h-[80%]'></div>
                     <div className='absolute top-0 right-0 bg-violet-300 rounded-full w-[60%] h-[80%]'></div>
@@ -130,7 +136,7 @@ const Course:React.FunctionComponent = ()=>{
                         <div className='w-full flex justify-start gap-2 items-start'>
                             <svg className='text-green-500' xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path fill="currentColor" fillRule="evenodd" d="M3 13.5a.5.5 0 0 1-.5-.5V3a.5.5 0 0 1 .5-.5h9.25a.75.75 0 0 0 0-1.5H3a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V9.75a.75.75 0 0 0-1.5 0V13a.5.5 0 0 1-.5.5zm12.78-8.82a.75.75 0 0 0-1.06-1.06L9.162 9.177L7.289 7.241a.75.75 0 1 0-1.078 1.043l2.403 2.484a.75.75 0 0 0 1.07.01z" clipRule="evenodd"/>
                             </svg>
-                            <span className='font-Poppins'>100+ Courses Categories (Design ,Coding, etc)</span>
+                            <span className='font-Poppins'>100+ Courses Categories (Design , Coding, etc)</span>
                         </div>
                     </div>
                     <div className='w-full'>
@@ -141,14 +147,14 @@ const Course:React.FunctionComponent = ()=>{
                         </div>
                     </div>
                     <div>
-                        <button className='font-Poppins p-4 rounded-2xl text-white bg-black'>Explore restart</button>
+                        <button className='font-Poppins p-4 rounded-2xl text-white bg-black' onClick={handleClicks}>Explore restart</button>
                     </div>
                 </div>
             </div>
-            <div className='w-full 2xl:h-40vh xl:h-40vh lg:h-40vh md:30vh sm:h-30vh xs:h-30vh flex justify-center items-center p-4'>
+            <div className='w-full 2xl:h-30vh 2xl:mt-0 xl:mt-0 xl:h-40vh lg:h-40vh lg:mt-48 md:30vh sm:h-30vh xs:h-30vh flex justify-center items-center p-4'>
                 <Fade className='w-full h-full flex justify-center items-center' direction='left' triggerOnce>
                     <div className='2xl:w-[80%] xl:w-[80%] lg:w-[80%] md:w-full sm:w-full xs:w-full  h-full flex justify-center items-center'>
-                        <span className='2xl:text-6xl xl:text-6xl lg:text-5xl md:text-4xl sm:text-3xl xs:text-3xl font-Poppins'>There is nothing that limits you from wanting to learn whatever you want</span>
+                        <span className='2xl:text-6xl xl:text-6xl lg:text-5xl md:text-4xl sm:text-3xl xs:text-3xl font-Poppins text-center'>There is nothing that limits you from wanting to learn whatever you want</span>
                     </div>
                 </Fade>
             </div>

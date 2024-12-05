@@ -3,9 +3,10 @@ import persons from "../assets/images/person4.jpg";
 
 
 const Blog:React.FunctionComponent = ()=>{
+    
     return (
         <section className="w-full h-100vh bg-white flex justify-center items-center gap-4 2xl:p-4 xl:p-4 lg:p-2 md:p-0 sm:p-0 xs:p-0 flex-col">
-            <div className='bg-white w-full h-[55%] p-4 gap-4 flex justify-center items-center'>
+            <div className='bg-white w-full h-[55%] p-4 gap-4 flex 2xl:flex-row xl:flex-row lg:flex-row md:flex-col sm:flex-col xs:flex-col justify-center items-center'>
                 <div className='w-full h-full '>
                     <img src={persons} alt="person" className='w-full h-full object-cover'/>
                 </div>
@@ -20,7 +21,7 @@ const Blog:React.FunctionComponent = ()=>{
                 </div>
             </div>
             <div className='w-full h-[30%]'>
-                <div className='w-full h-full bg-gray-300 flex justify-center items-center flex-col 2xl:p-4 xl:p-4 lg:p-2 md:p-3 sm:p-0 xs:p-1 '>
+                <div className='w-full h-full flex justify-center items-center flex-col 2xl:p-4 xl:p-4 lg:p-2 md:p-3 sm:p-0 xs:p-1 '>
                     <span className='font-Poppins 2xl:text-5xl xl:text-4xl lg:text-4xl md:text4-xl sm:text-4xl xs:text-4xl  '>Why choose us?</span>
                     <span className='font-Roboto text-md text-slate-500'>A choose that makes a difference</span>,
                     <div className='2xl:w-[70%] xl:w-[70%] lg:w-[70%] md:w-[90%] sm:w-full xs:w-full h-full flex justify-center items-center gap-4 p-3'>
