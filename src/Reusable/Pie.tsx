@@ -1,6 +1,11 @@
 import React from "react";
 
 const NestedCircles:React.FunctionComponent = () => {
+
+  const handleConnect = ()=>{
+    window.location.href = '/about/team';
+  }
+
   return (
     <div className="2xl:w-full xl:w-full lg:w-full md:w-full sm:min-w-[200px] xs:min-w-[200px] flex justify-center items-center h-full bg-lightBrown flex-col">
       <div className="w-full h-full flex justify-center items-center relative">
@@ -27,7 +32,7 @@ const NestedCircles:React.FunctionComponent = () => {
         </div>
         <div className='w-full h-[40%] flex justify-center items-center flex-col absolute bottom-0'>
             <span className="capitalize text-2xl text-center font-Poppins">Meet and connect with our active communities</span>
-            <button className="p-3 bg-black text-white font-Poppins rounded-2xl capitalize">connect with a restart member</button>
+            <button className="p-3 bg-black text-white font-Poppins rounded-2xl capitalize" onClick={handleConnect}>connect with a restart member</button>
         </div>
       </div>
       </div>          

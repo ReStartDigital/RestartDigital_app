@@ -5,7 +5,7 @@ import Preview from "../Reusable/Preview";
 const Header:React.FunctionComponent = ()=>{
     const [ display , setDisplay ] = React.useState<boolean>(false)
      const registerHandler = ()=>{
-        window.location.href="http://localhost:3001/register/user"
+        window.location.href="/register/user"
      }
      const handleClick = ()=>{
         setDisplay(!display);

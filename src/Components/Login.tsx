@@ -7,7 +7,7 @@ import axios from "axios";
 type User = {
   email:string;
   password:string;
-  agreed:boolean;
+
 }
 
 const Login: React.FC = () => {
@@ -15,7 +15,6 @@ const Login: React.FC = () => {
   const [ formData , setformData ] = useState<User>({
     email:"",
     password:"",
-    agreed:false
   })
   const [ state , setState ] = useState<boolean>(false);
 
@@ -30,7 +29,7 @@ const Login: React.FC = () => {
       setState(false);
     }
 
-    if (formData.email && formData.password.length >= 8 && formData.agreed) {
+    if (formData.email && formData.password.length >= 8 ) {
       setState(true);
     } else {
       setState(false); 

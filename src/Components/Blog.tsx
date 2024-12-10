@@ -20,7 +20,7 @@ const Blog:React.FunctionComponent = ()=>{
                     </span>
                 </div>
             </div>
-            <div className='w-full h-[30%]'>
+            <div className='w-full h-[30%] bg-gray-100'>
                 <div className='w-full h-full flex justify-center items-center flex-col 2xl:p-4 xl:p-4 lg:p-2 md:p-3 sm:p-0 xs:p-1 '>
                     <span className='font-Poppins 2xl:text-5xl xl:text-4xl lg:text-4xl md:text4-xl sm:text-4xl xs:text-4xl  '>Why choose us?</span>
                     <span className='font-Roboto text-md text-slate-500'>A choose that makes a difference</span>,
