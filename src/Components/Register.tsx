@@ -9,7 +9,6 @@ interface User {
     lastName:string;
     email:string;
     telephoneNumber:string;
-    dateOfBirth:string;
     password:string;
     confirmPassword?:string;
     agreed:boolean;
@@ -24,7 +23,6 @@ const Register:React.FunctionComponent = ()=>{
             lastName:"",// minimum of 3 and maximum of 20 required
             email:"", 
             telephoneNumber:"", //max of 13 and min of 10
-            dateOfBirth:"",
             password:"",
             confirmPassword:"",
             agreed:false,
@@ -37,14 +35,11 @@ const Register:React.FunctionComponent = ()=>{
         e.preventDefault();
         try{
             const day = new Date();
-            const birthYear = parseInt(formData.dateOfBirth.split('-')[0]);
-            const convert = day.getFullYear() - birthYear;
+           
             const tele = formData.telephoneNumber.length < 13 ? setError('Must include country code ') : null;
             const first = formData.firstName.length > 3 && formData.firstName.length <= 20 ? formData.firstName : toast.error("Name length must greater than 3 characters");
             if (formData.password !== formData.confirmPassword){
                 toast.error("Passwords do not match");
-            }else if(convert < 18){
-                toast.error("Must be 18 and above");
             }else{
                 const response = await axios.post("" , formData,{ withCredentials: true }) //insert backend url here
                 console.log(response.data);
@@ -95,10 +90,7 @@ const Register:React.FunctionComponent = ()=>{
                             <label className='font-Poppins'>Telephone number:</label>
                             <input type='tel' value={formData.telephoneNumber} onChange={handleChange} name="telephoneNumber" placeholder="Type your telephone number" minLength={10} maxLength={13} className="w-[70%] p-4 focus:outline-none font-Poppins" required/>
                         </div>
-                        <div className="w-full h-[8%] flex justify-between items-center flex-col">
-                            <label className='font-Poppins'>Date of birth:</label>
-                            <input type="date" value={formData.dateOfBirth} name="dateOfBirth" onChange={handleChange} className="w-[70%] p-4 font-Poppins text-white bg-black"  />
-                        </div>
+                       
                         <div className="w-full h-[10%] flex justify-between items-center flex-col">
                             <label className='font-Poppins'>Password:</label>
                             <input type='password' value={formData.password} name="password" minLength={len}  onChange={handleChange} placeholder="Type your password"  className="w-[70%] p-4 font-Poppins" required/>
