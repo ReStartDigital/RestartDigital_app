@@ -50,7 +50,7 @@ const Register:React.FunctionComponent = ()=>{
                 toast.success("Registered successfully");
             }
         }catch(err:any){
-            console.log(err);
+            toast.error(err.response.data.message)
         }
     }
 
