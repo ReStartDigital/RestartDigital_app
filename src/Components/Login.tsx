@@ -2,8 +2,6 @@ import React , { useState }  from 'react';
 import axios from "axios";
 
 
-
-
 type User = {
   email:string;
   password:string;
@@ -55,15 +53,13 @@ const handleSubmit = async(e:any)=>{
   }catch(err:any){
     console.log(err);
   }
-  
-  
 }
 
   return (
     <section className="w-full h-80vh flex justify-center items-center flex-col">
       <div className="2xl:w-[45%] xl:w-[45%] lg:w-[40%] md:w-full sm:w-full xs:w-full h-[80%] flex justify-center items-center 2xl:flex-col xl:flex-col lg:flex-col md:flex-col sm:flex-col xs:flex-col xx:flex-col">
         <div className='w-full h-full p-4 rounded-lg'>
-            
+           
             <form className="w-full h-full gap-4 p-3 flex justify-center items-center flex-col" onSubmit={handleSubmit}>
               <h1 className='font-Poppins text-3xl'>Sign in</h1>
               <span className='font-Poppins'>Explore all what Restart Digital has to offer by signing in to our services.</span>
