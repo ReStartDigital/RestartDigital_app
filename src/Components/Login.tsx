@@ -34,13 +34,14 @@ const Login: React.FC = () => {
     }
   }
 
-  const handleGoogleLogin = () => {
-    window.location.href = "https://web-dev-learning.onrender.com/app/google";
+  const handleGoogleLogin = async () => {
+    const response = await axios.get("https://web-dev-learning.onrender.com/app/google",{ withCredentials: true})
+    sessionStorage.setItem("authToken", response.data)
   };
 
-  const handleGitHubLogin = () => {
-    // Add logic for GitHub login here
-   window.location.href = "https://web-dev-learning.onrender.com/app/github";
+  const handleGitHubLogin = async () => {
+    const response = await axios.get("https://web-dev-learning.onrender.com/app/github",{ withCredentials: true})
+    sessionStorage.setItem("authToken", response.data)
   };
 
 const handleSubmit = async(e:any)=>{
