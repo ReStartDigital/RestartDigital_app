@@ -48,10 +48,10 @@ const handleSubmit = async(e:any)=>{
     e.preventDefault();
     const response = await axios.post("https://web-dev-learning.onrender.com/app/signin" , formData , { withCredentials: true });//insert backend url here
     if(response.data){
-    setStatus(response.data.message);
+    window.location.href = "/course/details";
   }
   }catch(err:any){
-    console.log(err);
+    setStatus(err.response.data.message);
   }
 }
 
