@@ -50,8 +50,6 @@ const handleSubmit = async(e:any)=>{
     const response = await axios.post("https://web-dev-learning.onrender.com/app/signin" , formData , { withCredentials: true });//insert backend url here
     console.log(response.data)
     if(response.data){
-    // window.location.href = "/course/details";
-    console.log(response.data)
     sessionStorage.setItem("authToken", response.data)
   }
   }catch(err:any){
