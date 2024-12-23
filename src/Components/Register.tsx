@@ -46,8 +46,9 @@ const Register:React.FunctionComponent = ()=>{
                 toast.error("Must be 18 or above")
             }else{
                 const response = await axios.post("https://web-dev-learning.onrender.com/app/signup" , formData,{ withCredentials: true }) //insert backend url here
-                console.log(response.data);
-               if(response.data.success){
+               if(response.data.status === false){
+                    toast.error(response.data.state)
+               }else{
                 toast.success("Registration successfull")
                }
             }
