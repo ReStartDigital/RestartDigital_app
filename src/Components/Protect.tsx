@@ -16,9 +16,14 @@ const ProtectedRoute: React.FunctionComponent<ProtectRouteProps> = ({ children }
     const checkAuth = async (): Promise<void> => {
       try {
         console.log("Checking main auth endpoint");
+        const token = sessionStorage.getItem("authToken");
 
         // Check the main auth endpoint first
-        const response = await axios.get('https://web-dev-learning.onrender.com/app/protected', { withCredentials: true });
+        const response = await axios.get('https://web-dev-learning.onrender.com/app/protected', { withCredentials: true , 
+          headers: {
+            Authorization: `Bearer ${token}`
+          }
+        });
 
         if (response) {
           console.log("Authenticated with main endpoint");

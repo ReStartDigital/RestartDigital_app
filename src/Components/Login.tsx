@@ -50,6 +50,7 @@ const handleSubmit = async(e:any)=>{
     if(response.data.success === true){
     // window.location.href = "/course/details";
     console.log("verified")
+    sessionStorage.setItem("authToken", response.data.token)
   }
   }catch(err:any){
     setStatus(err.response.data.message);
