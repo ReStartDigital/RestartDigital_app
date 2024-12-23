@@ -48,7 +48,6 @@ const Login: React.FC = () => {
 const handleSubmit = async(e:any)=>{
   try{
     e.preventDefault();
-    console.log("login button")
     const response = await axios.post("https://web-dev-learning.onrender.com/app/signin" , formData , { withCredentials: true });//insert backend url here
     console.log(response.data)
     if(response.data){

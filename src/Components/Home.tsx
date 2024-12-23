@@ -26,6 +26,10 @@ const Home:React.FunctionComponent = ()=>{
         window.location.href = "/courses";
     }
 
+    const handleFirstCourse =()=>{
+        window.location.href = '/course/details';
+    }
+
     return (
         <section className="w-full h-full flex justify-start items-center flex-col overflow-x-hidden">
             <div className="relative w-full 2xl:h-50vh xl:h-40vh lg:h-50vh md:h-50vh sm:h-50vh xs:h-50vh justify-center items-center flex">
@@ -222,7 +226,7 @@ const Home:React.FunctionComponent = ()=>{
                                 <span className="w-full font-Poppins text-center text-black 2xl:text-3xl xl:text-3xl lg:text-3xl md:text-2xl sm:text-xl xs:text-xl capitalize">find the course you are most interested in, just today!</span>
                             </div>
                             <div className="w-full h-[50%]  flex justify-center items-center">
-                                <button className="w-[90%] p-3 bg-black text-white font-Poppins rounded-xl">Join our first course</button>
+                                <button className="w-[90%] p-3 bg-black text-white font-Poppins rounded-xl" onClick={handleFirstCourse}>Join our first course</button>
                             </div>
                         </div>
                         <div className="2xl:w-full xl:w-full lg:w-full md:w-full sm:min-w-[200px] xs:min-w-[200px] bg-white h-full flex justify-center items-center flex-col p-2 rounded-md">
