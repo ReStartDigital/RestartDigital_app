@@ -465,7 +465,7 @@ found()
                     {
                         text && 
                         <div className='w-[80%] h-full overflow-scroll'>
-                            <span className='text-sm font-Poppins text-white'>{text}</span>
+                            <span className='text-sm font-Poppins text-black'>{text}</span>
                         </div>
                     }
                 </div>
