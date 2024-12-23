@@ -16,7 +16,7 @@ const Login: React.FC = () => {
     email:"",
     password:"",
   })
-  const [ state , setState ] = useState<boolean>(false);
+  const [ state , setState ] = useState<boolean>(true);
 
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>)=>{
@@ -30,9 +30,9 @@ const Login: React.FC = () => {
     }
 
     if (formData.email && formData.password.length >= 8 ) {
-      setState(true);
+      setState(false);
     } else {
-      setState(false); 
+      setState(true); 
     }
   }
 
@@ -48,7 +48,9 @@ const Login: React.FC = () => {
 const handleSubmit = async(e:any)=>{
   try{
     e.preventDefault();
+    console.log("login button")
     const response = await axios.post("https://web-dev-learning.onrender.com/app/signin" , formData , { withCredentials: true });//insert backend url here
+    console.log(response.data)
     if(response.data){
     setStatus(response.data.message);
   }
@@ -80,7 +82,7 @@ const handleSubmit = async(e:any)=>{
                     title="Must contain at least one number, one uppercase and lowercase letter, and at least 8 or more characters" className="w-[70%] 2xl:p-4 xl:p-4 lg:p-3 md:p-3 sm:p-3 xs:p-3 font-Poppins focus:outline-none" required/>
                 </div>
                 
-                <button disabled={state} type='submit' className={`p-3 font-Poppins ${state ? 'bg-black' : 'bg-stone-300'} text-white rounded-md w-[30%]`}>Log in</button>
+                <button disabled={state} type='submit' className={`p-3 font-Poppins ${state ? 'bg-stone-300' : 'bg-black'} ${state ? 'hover:cursor-default' : 'hover:cursor-pointer'} text-white rounded-md w-[30%] `} onClick={handleSubmit}>Log in</button>
             </form>
         </div>
         <div className="flex flex-col items-center space-y-4">
