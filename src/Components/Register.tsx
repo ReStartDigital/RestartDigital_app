@@ -47,7 +47,9 @@ const Register:React.FunctionComponent = ()=>{
             }else{
                 const response = await axios.post("https://web-dev-learning.onrender.com/app/signup" , formData,{ withCredentials: true }) //insert backend url here
                 console.log(response.data);
-                toast.success("Registered successfully");
+               if(response.data.success){
+                toast.success("Registration successfull")
+               }
             }
         }catch(err:any){
             toast.error(err.response.data.message)
