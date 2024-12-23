@@ -8,10 +8,11 @@ interface User {
     middleName:string;
     lastName:string;
     email:string;
-    telephoneNumber:string;
+    phoneNumber:string;
     password:string;
     confirmPassword?:string;
     agreed:boolean;
+    dateOfBirth:string
 }
 
 const Register:React.FunctionComponent = ()=>{
@@ -22,10 +23,11 @@ const Register:React.FunctionComponent = ()=>{
             middleName:"", // optional
             lastName:"",// minimum of 3 and maximum of 20 required
             email:"", 
-            telephoneNumber:"", //max of 13 and min of 10
+            phoneNumber:"", //max of 13 and min of 10
             password:"",
             confirmPassword:"",
             agreed:false,
+            dateOfBirth:""
         }
     )
 
@@ -35,20 +37,21 @@ const Register:React.FunctionComponent = ()=>{
         e.preventDefault();
         try{
             const day = new Date();
-           
-            const tele = formData.telephoneNumber.length < 13 ? setError('Must include country code ') : null;
+            const convert: number = day.getFullYear() - new Date(formData.dateOfBirth).getFullYear()
+            const tele = formData.phoneNumber.length < 13 ? setError('Must include country code ') : null;
             const first = formData.firstName.length > 3 && formData.firstName.length <= 20 ? formData.firstName : toast.error("Name length must greater than 3 characters");
             if (formData.password !== formData.confirmPassword){
                 toast.error("Passwords do not match");
+            }else if(convert < 18){
+                toast.error("Must be 18 or above")
             }else{
-                const response = await axios.post("" , formData,{ withCredentials: true }) //insert backend url here
+                const response = await axios.post("https://web-dev-learning.onrender.com/app/signup" , formData,{ withCredentials: true }) //insert backend url here
                 console.log(response.data);
                 toast.success("Registered successfully");
             }
         }catch(err:any){
             console.log(err);
         }
- 
     }
 
 
@@ -66,38 +69,42 @@ const Register:React.FunctionComponent = ()=>{
         <section className="w-full h-full flex justify-center items-center p-3">
             <Toaster position="top-right"/>
             <div className="2xl:w-[40%] xl:w-[40%] lg:w-full md:w-full sm:w-full xs:w-full h-full  flex justify-center items-center 2xl:flex-row xl:flex-row lg:flex-row md:flex-col-reverse sm:flex-col-reverse xs:flex-col-reverse">
-                <div className='w-full bg-gray-200 rounded-md 2xl:h-full xl:h-full lg:h-full md:h-full sm:h-full xs:h-full flex justify-center items-center'>
+                <div className='w-full rounded-md 2xl:h-full xl:h-full lg:h-full md:h-full sm:h-full xs:h-full flex justify-center items-center'>
                     <form className="w-full h-full flex-col p-3 flex justify-center items-center  gap-4" onSubmit={handleSubmit}>
                         <h1 className='font-Poppins text-3xl font-bold text-center'>Register Account</h1>
                         <span className='text-red-500 font-Poppins text-center'>{error}</span>
                         <div className="w-full h-[8%] flex justify-between items-center flex-col">
                             <label className='font-Poppins'>First Name:</label>
-                            <input type='text' value={formData.firstName} name="firstName" onChange={handleChange} placeholder="Type your first name" className="w-[70%] p-4 font-Poppins focus:outline-none" required/>
+                            <input type='text' value={formData.firstName} name="firstName" onChange={handleChange} placeholder="Type your first name" className="w-[70%] p-4 font-Poppins outline-green-400 outline-1" required/>
                         </div>
                         <div className="w-full h-[8%] flex justify-between items-center flex-col">
                             <label className='font-Poppins'>Middle Name:</label>
-                            <input type='text' value={formData.middleName} name="middleName" onChange={handleChange} placeholder="Type your middle name" className="w-[70%] p-4 font-Poppins focus:outline-none"/>
+                            <input type='text' value={formData.middleName} name="middleName" onChange={handleChange} placeholder="Type your middle name" className="w-[70%] p-4 font-Poppins outline-green-400 outline-1"/>
                         </div>
                         <div className="w-full h-[8%] flex justify-between items-center flex-col">
                             <label className='font-Poppins'>Last Name:</label>
-                            <input type='text' value={formData.lastName} name="lastName" onChange={handleChange} placeholder="Type your last name" className="w-[70%] p-4 font-Poppins focus:outline-none" required/>
+                            <input type='text' value={formData.lastName} name="lastName" onChange={handleChange} placeholder="Type your last name" className="w-[70%] p-4 font-Poppins outline-green-400 outline-1" required/>
                         </div>
                         <div className="w-full h-[8%] flex justify-between items-center flex-col">
                             <label className='font-Poppins'>Email:</label>
-                            <input type='email' value={formData.email} name="email" placeholder="Type your email" onChange={handleChange} className="w-[70%] p-4 font-Poppins focus:outline-none" required/>
+                            <input type='email' value={formData.email} name="email" placeholder="Type your email" onChange={handleChange} className="w-[70%] p-4 font-Poppins outline-green-400 outline-1" required/>
                         </div>
                         <div className="w-full h-[8%] flex justify-between items-center flex-col">
                             <label className='font-Poppins'>Telephone number:</label>
-                            <input type='tel' value={formData.telephoneNumber} onChange={handleChange} name="telephoneNumber" placeholder="Type your telephone number" minLength={10} maxLength={13} className="w-[70%] p-4 focus:outline-none font-Poppins" required/>
+                            <input type='tel' value={formData.phoneNumber} onChange={handleChange} name="phoneNumber" placeholder="Type your telephone number" minLength={10} maxLength={13} className="w-[70%] p-4 outline-green-400 outline-1 font-Poppins" required/>
                         </div>
                        
                         <div className="w-full h-[10%] flex justify-between items-center flex-col">
                             <label className='font-Poppins'>Password:</label>
-                            <input type='password' value={formData.password} name="password" minLength={len}  onChange={handleChange} placeholder="Type your password"  className="w-[70%] p-4 font-Poppins" required/>
+                            <input type='password' value={formData.password} name="password" minLength={len}  onChange={handleChange} placeholder="Type your password"  className="w-[70%] p-4 font-Poppins outline-green-400 outline-1" required/>
                         </div>
                         <div className="w-full h-[10%] flex justify-center items-center flex-col">
                             <label className='font-Poppins'>Confirm Password:</label>
-                            <input type='password' value={formData.confirmPassword}  onChange={handleChange} name="confirmPassword" placeholder="Re-Type your password" minLength={8} className="w-[70%] p-4 font-Poppins" required/>
+                            <input type='password' value={formData.confirmPassword}  onChange={handleChange} name="confirmPassword" placeholder="Re-Type your password" minLength={8} className="w-[70%] p-4 font-Poppins outline-green-400 outline-1" required/>
+                        </div>
+                        <div className="w-full h-[10%] flex justify-center items-center flex-col">
+                            <label className='font-Poppins'>Date of Birth:</label>
+                            <input type='date' value={formData.dateOfBirth}  onChange={handleChange} name="dateOfBirth" placeholder="dateOfBirth" minLength={8} className="w-[70%] p-4 font-Poppins outline-green-400 outline-1" required/>
                         </div>
                         <div className="2xl:w-[55%] xl:w-[60%] lg:w-[60%] md:w-[50%] sm:w-[45%] xs:w-[80%] h-[8%] flex justify-between items-center mb-0 2xl:gap-0 xl:gap-0 lg:gap-0 md:gap-3 sm:gap-4 xs:gap-4">
                             <input type='checkbox' checked={formData.agreed} name="agreed"  onChange={handleChange} placeholder="Type your password"  minLength={8} className="p-2 font-Roboto accent-black" required/>
