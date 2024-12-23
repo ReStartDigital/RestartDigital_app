@@ -34,14 +34,13 @@ const Login: React.FC = () => {
     }
   }
 
-  const handleGoogleLogin = async () => {
-    const response = await axios.get("https://web-dev-learning.onrender.com/app/google",{ withCredentials: true})
-    sessionStorage.setItem("authToken", response.data)
+  const handleGoogleLogin =  () => {
+    window.location.href = "https://web-dev-learning.onrender.com/app/google";
   };
 
-  const handleGitHubLogin = async () => {
-    const response = await axios.get("https://web-dev-learning.onrender.com/app/github",{ withCredentials: true})
-    sessionStorage.setItem("authToken", response.data)
+  const handleGitHubLogin = () => {
+    // Add logic for GitHub login here
+   window.location.href = "https://web-dev-learning.onrender.com/app/github";
   };
 
 const handleSubmit = async(e:any)=>{
@@ -50,6 +49,8 @@ const handleSubmit = async(e:any)=>{
     const response = await axios.post("https://web-dev-learning.onrender.com/app/signin" , formData , { withCredentials: true });//insert backend url here
     console.log(response.data)
     if(response.data){
+    // window.location.href = "/course/details";
+    console.log(response.data)
     sessionStorage.setItem("authToken", response.data)
   }
   }catch(err:any){
