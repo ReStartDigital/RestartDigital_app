@@ -47,8 +47,9 @@ const handleSubmit = async(e:any)=>{
   try{
     e.preventDefault();
     const response = await axios.post("https://web-dev-learning.onrender.com/app/signin" , formData , { withCredentials: true });//insert backend url here
-    if(response.data){
-    window.location.href = "/course/details";
+    if(response.data.success === true){
+    // window.location.href = "/course/details";
+    console.log("verified")
   }
   }catch(err:any){
     setStatus(err.response.data.message);
