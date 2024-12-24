@@ -18,7 +18,7 @@ interface IframeProps {
 
   
 
-const Courses: React.FC<IframeProps> = ({ width="100%" , height="75%" , src , title })=>{
+const Courses: React.FC<IframeProps> = ({ width="100%" , height="70%" , src , title })=>{
   const [ display, setDisplay ] = useState<boolean>(true);
   const [ text , setText ] = useState<string>("")
   const [ isAsked , setIsAsk ] = useState<boolean>(false);
@@ -327,7 +327,7 @@ found()
                         </div>
                         <div className='overflow-scroll w-full h-full 2xl:p-4 xl:p-4 lg:p-3 md:p-3 sm:p-1 xs:p-0 gap-4' id="setup">
                                 <h1 className='text-5xl text-black font-Poppins font-bold p-4' id="starter">Get Started</h1>  
-                                <div className='w-full 2xl:h-[20%] xl:h-[10%] lg:h-[20%] md:h-[20%] sm:h-[40%] xs:h-[30%] p-4'>
+                                <div className='w-full 2xl:h-[20%] xl:h-[10%] lg:h-[20%] md:h-[20%] sm:h-[40%] xs:h-[30%] p-4 2xl:mb-0 xl:mb-0 lg:mb-0 md:mb-0 sm:mb-12 xs:mb-12'>
                                     <span className='text-black font-Poppins 2xl:text-md xl:text-md lg:text-md md:text-sm sm:text-sm xs:text-sm'>
                                         To even think of developing or building a product been a beginner or a professional there
                                         are some essentials tools needed example for a carpenter to build a woodden structure
@@ -352,7 +352,7 @@ found()
                                         </span>
                                     </div>
                                 </div>
-                                <div className='w-full 2xl:h-[40%] xl:h-[40%] lg:h-[50%] md:h-[30%] sm:h-[50%] xs:h-[50%] p-4' id='history'>
+                                <div className='w-full 2xl:h-[40%] xl:h-[40%] lg:h-[50%] md:h-[30%] sm:h-[50%] xs:h-[50%] p-4 2xl:mb-0 xl:mb-0 lg:mb-0 md:mb-0 sm:mb-12 xs:mb-12' id='history'>
                                     <h1 className='2xl:text-5xl text-black font-Poppins font-bold lg:text-5xl md:text-3xl sm:text-3xl xs:text-3xl'>History of the web</h1><br/>
                                     <span className='font-Poppins text-Poppins 22xl:text-md xl:text-md lg:text-md md:text-sm sm:text-sm xs:text-sm'>                 
                                         The web, short for World Wide Web (WWW), is a system of interlinked hypertext documents and multimedia content accessible via the internet.
@@ -362,7 +362,7 @@ found()
                                         You can read more about the web <a className='text-blue-500 underline' href='https://en.wikipedia.org/wiki/World_Wide_Web'>here</a>.
                                     </span>
                                 </div>
-                                <div className='w-full 2xl:h-[80%] lg:h-[90%] md:h-[70%] sm:h-40vh mb-10 xs:h-[90%] p-4 2xl:mb-0 xl:mb-0 lg:mb-0 md:mb-0 sm:mb-12 xs:mb-12' id='html'>
+                                <div className='w-full 2xl:h-[80%] lg:h-[90%] md:h-[70%] sm:h-40vh  xs:h-[90%] p-4 2xl:mb-0 xl:mb-0 lg:mb-0 md:mb-0 sm:mb-12 xs:mb-12' id='html'>
                                     <h1 className='2xl:text-5xl text-black font-Poppins font-bold lg:text-5xl md:text-3xl sm:text-3xl xs:text-3xl mb-5'>HTML</h1>
                                     <span className='font-Poppins text-black 2xl:text-md xl:text-md lg:text-md md:text-sm sm:text-sm xs:text-sm mb-5'>
                                         HTML (Hypertext Markup Language) is the standard language used to create and design web pages.
