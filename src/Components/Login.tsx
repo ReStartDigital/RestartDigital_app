@@ -71,15 +71,15 @@ const handleSubmit = async(e:any)=>{
               </div>
                 <div className="w-full h-full flex-col flex justify-start items-center 2xl:mb-4 xl:mb-4 lg:mb-8 md:mb-10 sm:mb-10 xs:mb-10">
                     <label className='font-Poppins'>Email:</label>
-                    <input type='email' value={formData.email} name="email" onChange={handleChange} placeholder="Type your email" className="w-[70%] 2xl:p-4 xl:p-4 lg:p-3 md:p-3 sm:p-3 xs:p-3 font-Poppins focus:outline-none" required/>
+                    <input type='email' value={formData.email} name="email" onChange={handleChange} placeholder="Type your email" className="2xl:w-[70%] xl:w-[70%] lg:w-[90%] md:w-[95%] sm:w-[95%] xs:w-[95%] xx:w-[95%] bg-gray-100 2xl:p-4 xl:p-4 lg:p-3 md:p-3 sm:p-3 xs:p-3 font-Poppins focus:outline-none" required/>
                 </div>
                 <div className="w-full h-full flex-col flex justify-start items-center">
                     <label className='font-Poppins'>Password:</label>
                     <input type='password' value={formData.password} name='password' onChange={handleChange} placeholder="Type your password" minLength={8}  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
-                    title="Must contain at least one number, one uppercase and lowercase letter, and at least 8 or more characters" className="w-[70%] 2xl:p-4 xl:p-4 lg:p-3 md:p-3 sm:p-3 xs:p-3 font-Poppins focus:outline-none" required/>
+                    title="Must contain at least one number, one uppercase and lowercase letter, and at least 8 or more characters" className="2xl:w-[70%] xl:w-[70%] lg:w-[90%] md:w-[95%] sm:w-[95%] xs:w-[95%] xx:w-[95%] bg-gray-100 2xl:p-4 xl:p-4 lg:p-3 md:p-3 sm:p-3 xs:p-3 font-Poppins focus:outline-none" required/>
                 </div>
                 
-                <button disabled={state} type='submit' className={`p-3 font-Poppins ${state ? 'bg-stone-300' : 'bg-black'} ${state ? 'hover:cursor-default' : 'hover:cursor-pointer'} text-white rounded-md w-[30%] `} onClick={handleSubmit}>Log in</button>
+                <button disabled={state} type='submit' className={`p-3 font-Poppins ${state ? 'bg-stone-300' : 'bg-black'} ${state ? 'hover:cursor-default' : 'hover:cursor-pointer'} text-white rounded-md 2xl:w-[70%] xl:w-[70%] lg:w-[90%] md:w-[95%] sm:w-[95%] xs:w-[95%] xx:w-[95%] `} onClick={handleSubmit}>Log in</button>
             </form>
         </div>
         <div className="flex flex-col items-center space-y-4">
