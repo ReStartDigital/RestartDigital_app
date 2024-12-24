@@ -85,23 +85,23 @@ found()
 
 
     return (
-        <section className="w-full h-full bg-white">
+        <section className="w-full h-full bg-white ">
             <section className='w-full h-full flex justify-center items-center bg-white'>
                 <div className='w-full h-full  flex justify-center items-start'>
                     <section className="2xl:w-full 2xl:h-[90%] lg:w-full lg:h-full md:w-full md:h-full sm:w-full sm:h-full xs:w-full xs:h-full flex justify-center items-center 2xl:p-5 lg:p-5 md:p-4 sm:p-3 xs:p-2 bg-center bg-cover bg-no-repeat relative" id='bg-image'>  
                         <div className='absolute opacity-60 top-0 w-full h-full'>
                         </div>
                         
-                        <div className='2xl:w-[100%] 2xl:h-full 2xl:flex-row flex justify-center items-center gap-3 xl:w-full xl:h-full xl:flex-row lg:w-full lg:h-full lg:flex-row md:w-full md:h-full md:flex-col sm:w-full sm:h-full xs:w-full xs:h-full xs:flex-col'>
-                                <div className='2xl:w-[80%] 2xl:h-[80%] lg:w-[80%] lg:h-[80%] md:w-full md:h-full sm:w-full sm:h-full xs:w-full h-full flex justify-center items-center flex-col gap-4 z-30'>
-                                    <div className='w-full h-[30%] flex justify-center items-center 2xl:p-4 lg:-4 md:p-4 sm:p-3 xs:p-2'>
-                                        <span className='2xl:text-5xl lg:text-4xl md:text-4xl sm:text-3xl xs:text-3xl font-bold font-Poppins text-black'>Learn New Skills Online From Best <strong className='text-teal-400 underline font-Poppins'>Educators</strong></span>
+                        <div className='2xl:w-[100%] 2xl:h-full 2xl:flex-row flex justify-center items-center gap-3 xl:w-full xl:h-full xl:flex-row lg:w-full lg:h-full lg:flex-row md:w-full md:h-full md:flex-col sm:w-full sm:h-full xs:w-full xs:h-full xs:flex-col xx:flex-col'>
+                                <div className='2xl:w-[80%] 2xl:h-[80%] lg:w-[80%] lg:h-[80%] md:w-full md:h-full sm:w-full sm:h-full xs:w-full xx:w-full h-full flex justify-center items-center flex-col gap-4 z-20'>
+                                    <div className='w-full h-[30%] flex justify-center items-center 2xl:p-4 lg:-4 md:p-4 sm:p-3 xs:p-2 xx:p-1'>
+                                        <span className='2xl:text-5xl lg:text-4xl md:text-4xl sm:text-3xl xs:text-3xl xx:text-2xl font-bold font-Poppins text-black'>Learn New Skills Online From Best <strong className='text-teal-400 underline font-Poppins'>Educators</strong></span>
                                     </div>
                                     <div className='w-full h-[20%] flex justify-center items-center p-4'>
-                                        <span className='text-black 2xl:text-xl xl:text-xl lg:text-xl md:text-xl sm:text-sm xs:text-sm font-Poppins'>This is a simple website development course beginner friendly giving the best web experience and documentation available.</span>
+                                        <span className='text-black 2xl:text-xl xl:text-xl lg:text-xl md:text-xl sm:text-sm xs:text-sm xx:text-sm font-Poppins'>This is a simple website development course beginner friendly giving the best web experience and documentation available.</span>
                                     </div>
                                     <div className='w-full h-[40%] flex justify-start items-start gap-3 p-4 flex-col'>
-                                        <div className='2xl:w-[30%] 2xl:h-[50%] xl:w-[30%] xl:h-[50%] lg:w-[30%] lg:h-[50%] md:w-[40%] md:h-full sm:w-[40%] sm:h-full sm:p-4 xs:w-[40%] xs:h-full xs:p-4 bg-neutral-500 flex justify-center items-center rounded-md hover:cursor-pointer hover:bg-black hover:text-white '>
+                                        <div className='2xl:w-[30%] 2xl:h-[50%] xl:w-[30%] xl:h-[50%] lg:w-[30%] lg:h-[50%] md:w-[40%] md:h-full sm:w-[40%] sm:h-full sm:p-4 xs:w-[40%] xs:h-full xs:p-4 xx:p-4 bg-neutral-500 flex justify-center items-center rounded-md hover:cursor-pointer hover:bg-black hover:text-white '>
                                             <a className='w-full h-full flex justify-center items-center text-2xl hover:text-white hover:duration-100 text-black font-Poppins' href='#courses'>Courses</a>
                                         </div>
                                         <div className='w-[90%] h-[100%] flex justify-start items-center flex-col'>
@@ -125,7 +125,7 @@ found()
                                 </div>
                             
                             
-                                <div className='2xl:w-full 2xl:h-full xl:w-full xl:h-full lg:w-full lg:h-full md:w-full md:h-full flex justify-center items-center z-30 p-4 gap-10'>
+                                <div className='2xl:w-full 2xl:h-full xl:w-full xl:h-full lg:w-full lg:h-full md:w-full md:h-full flex justify-center items-center z-20 p-4 gap-10'>
                                     <div className='w-[70%] h-[90%] flex justify-center items-center rounded-lg relative bg-white'  style={style}>
                                         <img src={person} alt='person_one' className='w-full h-full object-cover rounded-lg mix-blend-luminosity'/>
                                       
