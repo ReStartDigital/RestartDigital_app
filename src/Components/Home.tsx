@@ -1,5 +1,6 @@
 /* eslint-disable react/jsx-no-undef */
-import React , { useRef } from "react";
+import React , { useRef , useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import Grid from "../Reusable/Grid";
 import { Fade } from "react-awesome-reveal";
 import Pic from "../assets/images/collaboration.jpg";
@@ -15,6 +16,16 @@ import Learning2 from "../assets/gifs/learning2.gif";
 
 const Home:React.FunctionComponent = ()=>{
     const inputRef: any = useRef(null);
+    const navigate = useNavigate();
+
+    useEffect(()=>{
+        const params = new URLSearchParams(window.location.search);
+        const token = params.get('token');
+        if(token){
+            sessionStorage.setItem("authToken", token)
+            navigate("/course/details");
+        }
+    },[navigate])
 
     const handleSearch = (event:React.MouseEvent<HTMLButtonElement>):void=>{
         event.preventDefault();
