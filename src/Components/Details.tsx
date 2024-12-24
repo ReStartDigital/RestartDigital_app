@@ -338,7 +338,7 @@ found()
                                 </div>
                                 <div className='w-full 2xl:h-[70%] xl:h-[30%] lg:h-[30%] md:h-[50%] sm:h-[80%] xs:h-[80%] 2xl:p-4 lg:p-4 md:p-3 sm:p-2 xs:p-2 flex justify-start items-start flex-col gap-0'>
                                     <h1 className='2xl:text-5xl text-black p-2 font-Poppins font-bold lg:text-5xl md:text-3xl sm:text-3xl xs:text-2xl  m-0 '>What is Visual studio Code?</h1><br/>
-                                    <div className='w-full 2xl:h-[20%] lg:h-[100%] md:h-[100%] sm:h-[90%] xs:h-[90%] 2xl:p-4 lg:p-4 md:p-3 sm:p-2 xs:p-1'>
+                                    <div className='w-full 2xl:h-[20%] lg:h-[100%] md:h-[100%] sm:h-[90%] xs:h-[95%] xx:h-[95%] 2xl:p-4 lg:p-4 md:p-3 sm:p-2 xs:p-1'>
                                         <span className='font-Poppins text-center text-black 2xl:p-2 lg:p-2 md:p-1 sm:p-1 xs:p-1 m-0 2xl:text-md xl:text-md lg:text-md md:text-sm sm:text-sm xs:text-sm'>
                                                 Visual Studio Code (VS Code) is a free, open-source code editor developed by Microsoft. It is designed to be lightweight yet powerful, providing developers with a feature-rich environment for coding in a variety of languages. Here’s an overview of what VS Code offers:<br/>
                                                 <strong>Key Features:<br/></strong>
@@ -362,7 +362,7 @@ found()
                                         You can read more about the web <a className='text-blue-500 underline' href='https://en.wikipedia.org/wiki/World_Wide_Web'>here</a>.
                                     </span>
                                 </div>
-                                <div className='w-full 2xl:h-[80%] lg:h-[90%] md:h-[70%] sm:h-40vh mb-10 xs:h-[80%] p-4 2xl:mb-0 xl:mb-0 lg:mb-0 md:mb-0 sm:mb-12 xs:mb-12' id='html'>
+                                <div className='w-full 2xl:h-[80%] lg:h-[90%] md:h-[70%] sm:h-40vh mb-10 xs:h-[90%] p-4 2xl:mb-0 xl:mb-0 lg:mb-0 md:mb-0 sm:mb-12 xs:mb-12' id='html'>
                                     <h1 className='2xl:text-5xl text-black font-Poppins font-bold lg:text-5xl md:text-3xl sm:text-3xl xs:text-3xl mb-5'>HTML</h1>
                                     <span className='font-Poppins text-black 2xl:text-md xl:text-md lg:text-md md:text-sm sm:text-sm xs:text-sm mb-5'>
                                         HTML (Hypertext Markup Language) is the standard language used to create and design web pages.
