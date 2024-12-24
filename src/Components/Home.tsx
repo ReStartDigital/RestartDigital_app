@@ -21,6 +21,7 @@ const Home:React.FunctionComponent = ()=>{
     useEffect(()=>{
         const params = new URLSearchParams(window.location.search);
         const token = params.get('token');
+        console.log(token);
         if(token){
             sessionStorage.setItem("authToken", token)
             navigate("/course/details");
