@@ -26,9 +26,9 @@ const App:React.FunctionComponent = ()=>{
               <Route path="/register/user" element={<Register/>}/>
               <Route path='/about/team' element={<About/>}/>
               <Route path='/course/details' element={
-              //<ProtectedRoute>
+              <ProtectedRoute>
                 <Details src="https://www.youtube.com/embed/kUMe1FH4CHE" title="Learn HTML – Full Tutorial for Beginners (2022)"/>
-              //</ProtectedRoute>
+              </ProtectedRoute>
           }>
             </Route>
           </Routes>
