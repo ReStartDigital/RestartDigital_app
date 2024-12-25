@@ -48,10 +48,10 @@ const handleSubmit = async(e:any)=>{
     e.preventDefault();
     const response = await axios.post("https://web-dev-learning.onrender.com/app/signin" , formData , { withCredentials: true });//insert backend url here
     if(response.data){
-    
-   
     sessionStorage.setItem("authToken", response.data)
     window.location.href = "/course/details";
+  }else{
+    sessionStorage.removeItem("authToken");
   }
   }catch(err:any){
     setStatus(err.response?.data?.message);
