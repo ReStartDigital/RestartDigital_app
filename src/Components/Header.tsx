@@ -3,7 +3,17 @@ import logo from "../assets/images/logo.jpg";
 import Preview from "../Reusable/Preview";
 
 const Header:React.FunctionComponent = ()=>{
-    const [ display , setDisplay ] = React.useState<boolean>(false)
+    const [ display , setDisplay ] = React.useState<boolean>(false);
+    const [ show , setShow ] = React.useState<boolean>(false);
+
+    React.useEffect(()=>{
+        const result = sessionStorage.getItem("authToken");
+        if(result){
+            setShow(true);
+        }else{
+            setShow(false);
+        }
+    },[show])
      const registerHandler = ()=>{
         window.location.href="/register/user"
      }
@@ -21,12 +31,12 @@ const Header:React.FunctionComponent = ()=>{
                     </div>
                     <li><a href="/" className='p-4 font-Poppins active:text-orange-400 active:underline 2xl:flex xl:flex lg:flex md:hidden sm:hidden xs:hidden xx:hidden'>Home</a></li>
                     <li><a href="/courses" className='p-4 font-Poppins 2xl:flex xl:flex lg:flex md:hidden sm:hidden xs:hidden xx:hidden'>Courses</a></li>
-                    <li><a href="/about/team" className='p-4 font-Poppins 2xl:flex xl:flex lg:flex md:hidden sm:hidden xs:hidden xx:hidden'>About Us</a></li>
+                    <li><a href="/about/team" className="p-4 font-Poppins 2xl:flex xl:flex lg:flex md:hidden sm:hidden xs:hidden xx:hidden">About Us</a></li>
                     <li><a href="/blog" className='p-4 font-Poppins 2xl:flex xl:flex lg:flex md:hidden sm:hidden xs:hidden xx:hidden'>Blog</a></li>
                     
                 </ul>
             </div>
-            <div className="2xl:w-[30%] xl:w-[30%] lg:w-[60%] md:w-[70%] sm:w-[90%] xs:w-[90%] xx:w-[90%] h-full flex 2xl:justify-center xl:justify-center lg:justify-center md:justify-between sm:justify-center xs:justify-between items-center 2xl:p-2 xl:p-2 lg:p-2 md:p-0 sm:p-0 xs:p-0">
+            <div className={`2xl:w-[30%] xl:w-[30%] lg:w-[60%] md:w-[70%] sm:w-[90%] xs:w-[90%] xx:w-[90%] h-full ${show ? "hidden" : "flex"} 2xl:justify-center xl:justify-center lg:justify-center md:justify-between sm:justify-center xs:justify-between items-center 2xl:p-2 xl:p-2 lg:p-2 md:p-0 sm:p-0 xs:p-0`}>
                 <div className='w-[50%] h-full flex justify-center items-center 2xl:flex xl:flex lg:flex md:hidden sm:hidden xs:hidden xx:hidden p-3'>
                     <a href="/login/user" className='p-4 font-Poppins'>Log in</a>
                 </div>
