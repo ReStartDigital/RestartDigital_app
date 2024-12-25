@@ -85,7 +85,7 @@ found()
 
 
     return (
-        <section className="w-full h-screen bg-white ">
+        <section className="w-full h-full bg-white ">
             <section className='w-full h-full flex justify-center items-center bg-white'>
                 <div className='w-full h-full  flex justify-center items-start'>
                     <section className="2xl:w-full 2xl:h-[90%] lg:w-full lg:h-full md:w-full md:h-full sm:w-full sm:h-full xs:w-full xs:h-full flex justify-center items-center 2xl:p-5 lg:p-5 md:p-4 sm:p-3 xs:p-2 bg-center bg-cover bg-no-repeat relative" id='bg-image'>  
