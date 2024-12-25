@@ -85,7 +85,7 @@ found()
 
 
     return (
-        <section className="w-full h-full bg-white ">
+        <section className="w-full h-screen bg-white ">
             <section className='w-full h-full flex justify-center items-center bg-white'>
                 <div className='w-full h-full  flex justify-center items-start'>
                     <section className="2xl:w-full 2xl:h-[90%] lg:w-full lg:h-full md:w-full md:h-full sm:w-full sm:h-full xs:w-full xs:h-full flex justify-center items-center 2xl:p-5 lg:p-5 md:p-4 sm:p-3 xs:p-2 bg-center bg-cover bg-no-repeat relative" id='bg-image'>  
@@ -336,7 +336,7 @@ found()
                                         used among developers is microsoft visual studio code to download link on the link <a href="https://code.visualstudio.com/" target='_blank' rel='noopener noreferrer' className='text-blue-400 underline'>here</a>
                                     </span>
                                 </div>
-                                <div className='w-full 2xl:h-[70%] xl:h-[30%] lg:h-[30%] md:h-[50%] sm:h-[80%] xs:h-[80%] 2xl:p-4 lg:p-4 md:p-3 sm:p-2 xs:p-2 flex justify-start items-start flex-col gap-0'>
+                                <div className='w-full 2xl:h-[70%] xl:h-[30%] lg:h-[30%] md:h-[50%] sm:h-[80%] xs:h-[80%] 2xl:p-4 lg:p-4 md:p-3 sm:p-2 xs:p-2 flex justify-start items-start flex-col gap-0 2xl:mb-0 xl:mb-28 lg:mb-28 md:mb-20 sm:mb-12 xs:mb-12'>
                                     <h1 className='2xl:text-5xl text-black p-2 font-Poppins font-bold lg:text-5xl md:text-3xl sm:text-3xl xs:text-2xl  m-0 '>What is Visual studio Code?</h1><br/>
                                     <div className='w-full 2xl:h-[20%] lg:h-[100%] md:h-[100%] sm:h-[90%] xs:h-[95%] xx:h-[95%] 2xl:p-4 lg:p-4 md:p-3 sm:p-2 xs:p-1'>
                                         <span className='font-Poppins text-center text-black 2xl:p-2 lg:p-2 md:p-1 sm:p-1 xs:p-1 m-0 2xl:text-md xl:text-md lg:text-md md:text-sm sm:text-sm xs:text-sm'>
@@ -352,7 +352,7 @@ found()
                                         </span>
                                     </div>
                                 </div>
-                                <div className='w-full 2xl:h-[40%] xl:h-[40%] lg:h-[50%] md:h-[30%] sm:h-[50%] xs:h-[50%] p-4 2xl:mb-0 xl:mb-0 lg:mb-0 md:mb-0 sm:mb-12 xs:mb-12' id='history'>
+                                <div className='w-full 2xl:h-[40%] xl:h-[40%] lg:h-[30%] md:h-[30%] sm:h-[50%] xs:h-[50%] p-4 2xl:mb-0 xl:mb-12 lg:mb-20 md:mb-20 sm:mb-12 xs:mb-12' id='history'>
                                     <h1 className='2xl:text-5xl text-black font-Poppins font-bold lg:text-5xl md:text-3xl sm:text-3xl xs:text-3xl'>History of the web</h1><br/>
                                     <span className='font-Poppins text-Poppins 22xl:text-md xl:text-md lg:text-md md:text-sm sm:text-sm xs:text-sm'>                 
                                         The web, short for World Wide Web (WWW), is a system of interlinked hypertext documents and multimedia content accessible via the internet.
