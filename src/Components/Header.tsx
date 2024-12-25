@@ -11,11 +11,12 @@ const Header:React.FunctionComponent = ()=>{
         if(result){
             setShow(true);
         }else{
+            sessionStorage.remove("authToken")
             setShow(false);
         }
     },[])
      const registerHandler = ()=>{
-        window.location.href="/register/user"
+        window.location.href="/register/user";
      }
      const handleClick = ()=>{
         setDisplay(!display);
