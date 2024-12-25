@@ -13,7 +13,7 @@ const Header:React.FunctionComponent = ()=>{
         }else{
             setShow(false);
         }
-    },[show])
+    },[])
      const registerHandler = ()=>{
         window.location.href="/register/user"
      }
