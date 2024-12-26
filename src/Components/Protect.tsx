@@ -15,7 +15,6 @@ const ProtectedRoute: React.FunctionComponent<ProtectRouteProps> = ({ children }
   useEffect(() => {
     const checkAuth = async (): Promise<void> => {
       try {
-        console.log("Checking main auth endpoint");
         const token = sessionStorage.getItem("authToken");
 
         // Check the main auth endpoint first
@@ -26,7 +25,7 @@ const ProtectedRoute: React.FunctionComponent<ProtectRouteProps> = ({ children }
         });
 
         if (response) {
-          console.log("Authenticated with main endpoint");
+         
           setIsAuthenticated(response.data.ok);
           return;
         };
