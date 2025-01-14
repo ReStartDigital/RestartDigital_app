@@ -1,5 +1,6 @@
 /* eslint-disable react/jsx-no-undef */
-import React , { useRef } from "react";
+import React , { useRef , useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import Grid from "../Reusable/Grid";
 import { Fade } from "react-awesome-reveal";
 import Pic from "../assets/images/collaboration.jpg";
@@ -15,6 +16,17 @@ import Learning2 from "../assets/gifs/learning2.gif";
 
 const Home:React.FunctionComponent = ()=>{
     const inputRef: any = useRef(null);
+    const navigate = useNavigate();
+
+    useEffect(()=>{
+        const params = new URLSearchParams(window.location.search);
+        const token = params.get('token');
+        console.log(token);
+        if(token){
+            sessionStorage.setItem("authToken", token)
+            navigate("/course/details");
+        }
+    },[navigate])
 
     const handleSearch = (event:React.MouseEvent<HTMLButtonElement>):void=>{
         event.preventDefault();
@@ -24,6 +36,10 @@ const Home:React.FunctionComponent = ()=>{
 
     const handleExplore = ():void=>{
         window.location.href = "/courses";
+    }
+
+    const handleFirstCourse =()=>{
+        window.location.href = '/course/details';
     }
 
     return (
@@ -222,7 +238,7 @@ const Home:React.FunctionComponent = ()=>{
                                 <span className="w-full font-Poppins text-center text-black 2xl:text-3xl xl:text-3xl lg:text-3xl md:text-2xl sm:text-xl xs:text-xl capitalize">find the course you are most interested in, just today!</span>
                             </div>
                             <div className="w-full h-[50%]  flex justify-center items-center">
-                                <button className="w-[90%] p-3 bg-black text-white font-Poppins rounded-xl">Join our first course</button>
+                                <button className="w-[90%] p-3 bg-black text-white font-Poppins rounded-xl" onClick={handleFirstCourse}>Join our first course</button>
                             </div>
                         </div>
                         <div className="2xl:w-full xl:w-full lg:w-full md:w-full sm:min-w-[200px] xs:min-w-[200px] bg-white h-full flex justify-center items-center flex-col p-2 rounded-md">

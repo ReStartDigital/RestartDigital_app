@@ -57,6 +57,22 @@ const About:React.FC = ()=>{
                     }
                 </div>
             </div>
+            <div className="w-full 2xl:h-15vh xl:h-15vh p-2 flex justify-center items-center">
+                <div className="w-[100%] h-full  flex justify-start items-start flex-col">
+                    <span className="font-Lexend text-black 2xl:text-7xl xl:text-7xl lg:text-5xl md:text-4xl sm:text-3xl xs:text-3xl">Mentorship Programs</span>
+                </div>
+            </div>
+            <div className="w-full 2xl:h-20vh xl:h-20vh lg:h-30vh md:h-full sm:h-full xs:h-full p-2 flex justify-start items-start">
+                <div className="2xl:w-[90%] xl:w-[90%] h-full flex justify-start items-start flex-col">
+                    <span className="font-Poppins text-black text-sm ">
+                        Mentorship in the tech industry fosters growth, innovation, and collaboration. 
+                        By sharing expertise, mentors guide mentees through challenges, empowering them to excel. 
+                        This exchange nurtures talent, bridges knowledge gaps, and drives career development.
+                        Companies benefit from stronger teams, increased retention, and a culture of learning, making mentorship a cornerstone of success.
+                        <span className='text-orange-500'>Contact any member of our team.</span>
+                    </span>
+                </div>
+            </div>
             <div className="w-full 2xl:h-30vh xl:h-30vh lg:h-30vh md:h-20vh sm:h-20vh xs:h-20vh flex justify-center items-center  p-4">
                     <div className='w-full h-full flex justify-start items-center'>
                         <span className='2xl:text-7xl xl:text-7xl lg:text-5xl md:text-5xl sm:text-4xl xs:text-4xl font-Lexend capitalize'>Previous years of restart digital</span>
