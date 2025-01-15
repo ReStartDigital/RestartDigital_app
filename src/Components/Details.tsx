@@ -327,7 +327,7 @@ found()
                         </div>
                         <div className='overflow-scroll w-full h-full 2xl:p-4 xl:p-4 lg:p-3 md:p-3 sm:p-1 xs:p-0 gap-4' id="setup">
                               
-                                <div className='w-full 2xl:h-[25%] xl:h-[40%] lg:h-[40%] md:h-[20%] sm:h-[40%] xs:h-[30%] p-4 2xl:mb-0 xl:mb-0 lg:mb-0 md:mb-0 sm:mb-12 xs:mb-12'> 
+                                <div className='w-full 2xl:h-[40%] xl:h-[40%] lg:h-[40%] md:h-[20%] sm:h-[40%] xs:h-[30%] p-4 2xl:mb-0 xl:mb-0 lg:mb-0 md:mb-0 sm:mb-12 xs:mb-12'> 
                                     <h1 className='text-5xl text-black font-Poppins font-bold p-4' id="starter">Get Started</h1>  
                                     <span className='text-black font-Poppins 2xl:text-md xl:text-md lg:text-md md:text-sm sm:text-sm xs:text-sm'>
                                         To even think of developing or building a product been a beginner or a professional there
