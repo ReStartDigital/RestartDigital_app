@@ -169,7 +169,7 @@ found()
                                 <path fill="currentColor" d="M0 0h48v48H0z" mask="url(#ipSHtmlFive0)" />
                             </svg>
                         </div>
-                        <div  className='w-full h-[30%] p-4'>
+                        <div  className='w-full h-[49%] p-4'>
                             <span className='font-Poppins text-xs text-black'>HTML HyperText Markup Language is the standard language used to create and structure content on the web.
                                  It defines the structure of a webpage by using elements or tags to organize text, images, links, and other media into a coherent layout. 
                                 HTML serves as the foundation of most websites.
@@ -331,7 +331,7 @@ found()
                                     <h1 className='text-5xl text-black font-Poppins font-bold p-4' id="starter">Get Started</h1>  
                                     <span className='text-black font-Poppins 2xl:text-md xl:text-md lg:text-md md:text-sm sm:text-sm xs:text-sm'>
                                         To even think of developing or building a product been a beginner or a professional there
-                                        are some essentials tools needed example for a carpenter to build a woodden structure
+                                        are some essentials tools needed example for a carpenter to build a wooden structure
                                         the carpenter needs a hammer, nail and a wood all together to complete a setup so as a developer.
                                         But the tools needed by a developer is an IDE (Integrated Development Environment) and the popular one y
                                         used among developers is microsoft visual studio code to download link on the link <a href="https://code.visualstudio.com/" target='_blank' rel='noopener noreferrer' className='text-blue-400 underline'>here</a>
@@ -363,7 +363,7 @@ found()
                                         You can read more about the web <a className='text-blue-500 underline' href='https://en.wikipedia.org/wiki/World_Wide_Web'>here</a>.
                                     </span>
                                 </div>
-                                <div className='w-full 2xl:h-[90%] xl:h-[50%] lg:h-[90%] md:h-[70%] sm:h-40vh  xs:h-[90%] p-4 2xl:mb-0 xl:mb-0 lg:mb-0 md:mb-0 sm:mb-12 xs:mb-12' id='html'>
+                                <div className='w-full 2xl:h-[90%] xl:h-[90%] lg:h-[90%] md:h-[70%] sm:h-40vh  xs:h-[90%] p-4 2xl:mb-0 xl:mb-0 lg:mb-0 md:mb-0 sm:mb-12 xs:mb-12' id='html'>
                                     <h1 className='2xl:text-5xl text-black font-Poppins font-bold lg:text-5xl md:text-3xl sm:text-3xl xs:text-3xl mb-5'>HTML</h1>
                                     <span className='font-Poppins text-black 2xl:text-md xl:text-md lg:text-md md:text-sm sm:text-sm xs:text-sm mb-5'>
                                         HTML (Hypertext Markup Language) is the standard language used to create and design web pages.
