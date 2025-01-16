@@ -25,7 +25,6 @@ const Course:React.FunctionComponent = ()=>{
         async function fetchData(){
             try{
                 const response = await axios.get("/jsons/courses.json");
-                console.log(response.data);
                 setData(response.data);
             }catch(error){
                 console.log(error);
@@ -37,7 +36,7 @@ const Course:React.FunctionComponent = ()=>{
     
 
     const handleClicks = ()=>{
-        console.log("Explore button clicked");
+        window.location.href = "#courses-link";
     }
 
 
@@ -159,7 +158,7 @@ const Course:React.FunctionComponent = ()=>{
                     </div>
                 </Fade>
             </div>
-            <div className='w-full p-4 flex justify-center items-center overflow-hidden'>
+            <div className='w-full p-4 flex justify-center items-center overflow-hidden' id="courses-link">
                 <div className='container 2xl:w-[80%] xl:w-[80%] lg:w-[80%] md:w-full sm:w-full xs:w-full h-auto gap-4 grid grid-cols-[repeat(auto-fit,minmax(280px,1fr))]  p-4'>
                     {
                         data.map((item)=>(
