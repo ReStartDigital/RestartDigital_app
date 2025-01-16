@@ -363,7 +363,7 @@ found()
                                         You can read more about the web <a className='text-blue-500 underline' href='https://en.wikipedia.org/wiki/World_Wide_Web'>here</a>.
                                     </span>
                                 </div>
-                                <div className='w-full 2xl:h-[80%] xl:h-[50%] lg:h-[90%] md:h-[70%] sm:h-40vh  xs:h-[90%] p-4 2xl:mb-0 xl:mb-0 lg:mb-0 md:mb-0 sm:mb-12 xs:mb-12' id='html'>
+                                <div className='w-full 2xl:h-[90%] xl:h-[50%] lg:h-[90%] md:h-[70%] sm:h-40vh  xs:h-[90%] p-4 2xl:mb-0 xl:mb-0 lg:mb-0 md:mb-0 sm:mb-12 xs:mb-12' id='html'>
                                     <h1 className='2xl:text-5xl text-black font-Poppins font-bold lg:text-5xl md:text-3xl sm:text-3xl xs:text-3xl mb-5'>HTML</h1>
                                     <span className='font-Poppins text-black 2xl:text-md xl:text-md lg:text-md md:text-sm sm:text-sm xs:text-sm mb-5'>
                                         HTML (Hypertext Markup Language) is the standard language used to create and design web pages.
@@ -372,11 +372,11 @@ found()
                                     <iframe width={width} height={height} src={src} title={title} frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen>
                                     </iframe>
                                 </div>
-                                <div className='w-full 2xl:h-[80%] xl:h-[80%] lg:h-[90%] md:h-[70%] sm:h-40vh mb-10 xs:h-[80%] p-4' id='css'>
+                                <div className='w-full 2xl:h-[90%] xl:h-[80%] lg:h-[90%] md:h-[70%] sm:h-40vh mb-10 xs:h-[80%] p-4' id='css'>
                                     <h1 className='2xl:text-5xl text-black font-Poppins font-bold lg:text-5xl md:text-3xl sm:text-3xl xs:text-3xl mb-5'>CSS</h1>
                                     <span className='font-Poppins text-black 2xl:text-md xl:text-md lg:text-md md:text-sm sm:text-sm xs:text-sm mb-5'>
                                             CSS is a styling language used to describe the presentation of a document written in HTML or XML. 
-                                        It controls the visual appearance of web pages, making them aesthetically appealing and enhancing user experience.
+                                            It controls the visual appearance of web pages, making them aesthetically appealing and enhancing user experience.
                                     </span>
                                     <iframe width={width} height={height} src="https://www.youtube.com/embed/ieTHC78giGQ" title="CSS Full Course - Includes Flexbox and CSS Grid Tutorials" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
                                 </div>
@@ -388,7 +388,7 @@ found()
                                     </span>
                                     <iframe width={width} height={height} src="https://www.youtube.com/embed/PkZNo7MFNFg" title="Learn JavaScript - Full Course for Beginners" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
                                 </div>
-                                <div className='w-full 2xl:h-[80%] xl:h-[80%] lg:h-[90%] md:h-[70%] sm:h-40vh xs:h-[80%] mb-10 p-4' id='bootstrap'>
+                                <div className='w-full 2xl:h-[90%] xl:h-[80%] lg:h-[90%] md:h-[70%] sm:h-40vh xs:h-[80%] mb-10 p-4' id='bootstrap'>
                                     <h1 className='2xl:text-5xl text-black font-Poppins font-bold lg:text-5xl md:text-3xl sm:text-3xl xs:text-3xl'>BOOTSTRAP CSS</h1>
                                     <span className='font-Poppins text-black 2xl:text-md xl:text-md lg:text-md md:text-sm sm:text-sm xs:text-sm mb-5'>
                                         Bootstrap is a popular, open-source front-end framework used to build responsive and mobile-first websites quickly and efficiently. 
@@ -396,7 +396,7 @@ found()
                                     </span>
                                     <iframe width={width} height={height} src="https://www.youtube.com/embed/-qfEOE4vtxE" title="Bootstrap CSS Framework - Full Course for Beginners" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
                                 </div>
-                                <div className='w-full 2xl:h-[80%] xl:h-[80%] lg:h-[90%] md:h-[70%] sm:h-40vh xs:h-[80%] mb-10 p-4' id='react'>
+                                <div className='w-full 2xl:h-[90%] xl:h-[80%] lg:h-[90%] md:h-[70%] sm:h-40vh xs:h-[80%] mb-10 p-4' id='react'>
                                     <h1 className='2xl:text-5xl text-black font-Poppins font-bold lg:text-5xl md:text-3xl sm:text-3xl xs:text-3xl'>REACT</h1>
                                     <span className='font-Poppins text-black 2xl:text-md xl:text-md lg:text-md md:text-sm sm:text-sm xs:text-sm mb-5'>
                                         React.js is an open-source JavaScript library developed by Facebook for building user interfaces, particularly for single-page applications where dynamic content is a focus.
@@ -413,7 +413,7 @@ found()
                                     <iframe width={width} height={height} src="https://www.youtube.com/embed/ft30zcMlFao" title="Learn Tailwind CSS – Course for Beginners" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
                                     
                                 </div>
-                                <div className='w-full 2xl:h-[80%] xl:h-[80%] lg:h-[90%] md:h-[70%] sm:h-40vh xs:h-[80%] mb-10 p-4' id='docker'>
+                                <div className='w-full 2xl:h-[90%] xl:h-[80%] lg:h-[90%] md:h-[70%] sm:h-40vh xs:h-[80%] mb-10 p-4' id='docker'>
                                     <h1 className='2xl:text-5xl text-black font-Poppins font-bold lg:text-5xl md:text-3xl sm:text-3xl xs:text-3xl'>DOCKER AND KUBERNATES</h1>
                                     <span className='font-Poppins text-black 2xl:text-md xl:text-md lg:text-md md:text-sm sm:text-sm xs:text-sm mb-5'>
                                         Docker is a platform that allows you to package, distribute, and run applications in containers. 
@@ -422,7 +422,7 @@ found()
                                     <iframe width={width} height={height} src="https://www.youtube.com/embed/kTp5xUtcalw" title="Docker Containers and Kubernetes Fundamentals – Full Hands-On Course" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
                                     
                                 </div>
-                                <div className='w-full 2xl:h-[80%] xl:h-[80%] lg:h-[90%] md:h-[70%] sm:h-[80%] xs:h-[90%] mb-10 p-4' id='express'>
+                                <div className='w-full 2xl:h-[90%] xl:h-[80%] lg:h-[90%] md:h-[70%] sm:h-[80%] xs:h-[90%] mb-10 p-4' id='express'>
                                     <h1 className='2xl:text-5xl text-black font-Poppins font-bold lg:text-5xl md:text-3xl sm:text-3xl xs:text-3xl'>NODE AND EXPRESS JS</h1>
                                      <span className='font-Poppins text-black 2xl:text-md xl:text-md lg:text-md md:text-sm sm:text-sm xs:text-sm mb-5'>
                                         Node.js is a JavaScript runtime environment that allows developers to write server-side applications using JavaScript.
@@ -430,7 +430,7 @@ found()
                                     </span>
                                     <iframe width={width} height={height} src="https://www.youtube.com/embed/Oe421EPjeBE" title="Node.js and Express.js - Full Course" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
                                 </div>
-                                <div className='w-full 2xl:h-[80%] xl:h-[80%] g:h-[90%] md:h-[70%] sm:h-40vh xs:h-[80%] mb-10 p-4' id='project'>
+                                <div className='w-full 2xl:h-[90%] xl:h-[80%] g:h-[90%] md:h-[70%] sm:h-40vh xs:h-[80%] mb-10 p-4' id='project'>
                                     <h1 className='2xl:text-5xl text-black font-Poppins font-bold lg:text-5xl md:text-3xl sm:text-3xl xs:text-3xl uppercase'>FULLSTACK mern PROJECT</h1> 
                                     <iframe width={width} height={height} src="https://www.youtube.com/embed/VAaUy_Moivw" title="MERN Stack Project: Build a Modern Real Estate Marketplace with react MERN (jwt, redux toolkit)" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>   
                                 </div>
