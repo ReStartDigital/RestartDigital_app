@@ -337,7 +337,7 @@ found()
                                         used among developers is microsoft visual studio code to download link on the link <a href="https://code.visualstudio.com/" target='_blank' rel='noopener noreferrer' className='text-blue-400 underline'>here</a>
                                     </span>
                                 </div>
-                                <div className='w-full 2xl:h-[70%] xl:h-[50%] lg:h-[50%] md:h-[50%] sm:h-[80%] xs:h-[80%] 2xl:p-4 lg:p-4 md:p-3 sm:p-2 xs:p-2 flex justify-start items-start flex-col gap-0 2xl:mb-0 xl:mb-28 lg:mb-28 md:mb-20 sm:mb-12 xs:mb-12'>
+                                <div className='w-full 2xl:h-[70%] xl:h-[70%] lg:h-[60%] md:h-[50%] sm:h-[80%] xs:h-[80%] 2xl:p-4 lg:p-4 md:p-3 sm:p-2 xs:p-2 flex justify-start items-start flex-col gap-0 2xl:mb-0 xl:mb-28 lg:mb-28 md:mb-20 sm:mb-12 xs:mb-12'>
                                     <h1 className='2xl:text-5xl text-black p-2 font-Poppins font-bold lg:text-5xl md:text-3xl sm:text-3xl xs:text-2xl  m-0 '>What is Visual studio Code?</h1><br/>
                                     <div className='w-full 2xl:h-[20%] lg:h-[100%] md:h-[100%] sm:h-[90%] xs:h-[95%] xx:h-[95%] 2xl:p-4 lg:p-4 md:p-3 sm:p-2 xs:p-1'>
                                         <span className='font-Poppins text-center text-black 2xl:p-2 lg:p-2 md:p-1 sm:p-1 xs:p-1 m-0 2xl:text-md xl:text-md lg:text-md md:text-sm sm:text-sm xs:text-sm'>
