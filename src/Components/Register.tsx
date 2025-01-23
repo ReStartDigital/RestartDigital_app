@@ -1,6 +1,8 @@
 import React , { useState } from 'react';
 import axios from "axios";
 import { Toaster , toast } from "react-hot-toast";
+import Spinner from './Spinner';
+import LoadingSpinner from '../Reusable/LoadingSpinner';
 
 
 interface User {
@@ -17,6 +19,7 @@ interface User {
 
 const Register:React.FunctionComponent = ()=>{
     const [ error , setError ] = useState<string>('');
+    const [ loading , setLoading ] = useState<boolean>(false);
     const [ formData , setFormData ] = useState<User>(
         {
             firstName:"", // minimum of 3 and maximum of 20 required
@@ -45,11 +48,15 @@ const Register:React.FunctionComponent = ()=>{
             }else if(convert < 18){
                 toast.error("Must be 18 or above")
             }else{
-                const response = await axios.post("https://web-dev-learning.onrender.com/app/signup" , formData,{ withCredentials: true }) //insert backend url here
+                setLoading(true);
+                 const response = await axios.post("https://web-dev-learning.onrender.com/app/signup" , formData,{ withCredentials: true }) //insert backend url here
                if(response.data.status === false){
                     toast.error(response.data.state)
+                    setLoading(false);
                }else{
+                setLoading(false);
                 toast.success("Registration successfull")
+                window.location.href = "/login/user";
                }
             }
         }catch(err:any){
@@ -113,7 +120,10 @@ const Register:React.FunctionComponent = ()=>{
                             <input type='checkbox' checked={formData.agreed} name="agreed"  onChange={handleChange} placeholder="Type your password"  minLength={8} className="p-2 font-Roboto accent-black" required/>
                             <label className="font-Poppins 2xl:text-md xl:text-md lg:text-md md:text-md sm:text-sm xs:text-xs">Agree with terms and conditions</label>
                         </div>
-                        <button type='submit' className='p-3 font-Poppins bg-black text-white rounded-md w-[40%]'>Register</button>
+                        {
+                            loading ? (<LoadingSpinner/>): <button type='submit' className='p-3 font-Poppins bg-black text-white rounded-md w-[40%]'>Register</button>
+                        }
+                        
                     </form>
                 </div> 
             </div>
