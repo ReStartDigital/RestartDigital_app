@@ -1,7 +1,6 @@
 import React , { useState } from 'react';
 import axios from "axios";
 import { Toaster , toast } from "react-hot-toast";
-import Spinner from './Spinner';
 import LoadingSpinner from '../Reusable/LoadingSpinner';
 
 

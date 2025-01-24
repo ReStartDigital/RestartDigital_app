@@ -122,9 +122,9 @@ const About:React.FC = ()=>{
                     
                 </div>  
             </div>
-            {
+            {/* {
                 initial && <Popup initial={toggleState}/>
-            }
+            } */}
             
         </section>
     )
