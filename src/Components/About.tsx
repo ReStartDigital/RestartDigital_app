@@ -66,9 +66,9 @@ const About:React.FC = ()=>{
                     }
                 </div>
             </div>
-            <div className="w-full h-10vh flex justify-center items-center p-4">
+            {/* <div className="w-full h-10vh flex justify-center items-center p-4">
                 <button className="p-3 pr-4 pl-4 bg-black text-white capitalize hover:rounded-full hover:shadow-lg transition-all rounded-2xl duration-700 hover:shadow-gray-400 font-Poppins" onClick={handleLinking}>Link your community to restart digital</button>
-            </div>
+            </div> */}
             <div className="w-full 2xl:h-15vh xl:h-15vh p-2 flex justify-center items-center">
                 <div className="w-[100%] h-full  flex justify-start items-start flex-col">
                     <span className="font-Lexend text-black 2xl:text-7xl xl:text-7xl lg:text-5xl md:text-4xl sm:text-3xl xs:text-3xl">Mentorship Programs</span>
