@@ -43,5 +43,14 @@
         "linkedin_account":"https://www.linkedin.com/in/owusu-emmanuel-a23532311?trk=contact-info",
         "info":"Emmanuel, A Python developer specializes in creating, testing, and maintaining software using Python, excelling in web development, data analysis, or machine learning."
        
+    },
+    {
+        "id":6,
+        "name":"Aidoo Mathias",
+        "position":"CyberSecurity",
+        "image_path":"/team/clergy.png",
+        "linkedin_account":"https://www.linkedin.com/in/owusu-emmanuel-a23532311?trk=contact-info",
+        "info":"Mathias, A CyberSecurity analyst specializes in testing, and maintaining systems using pentration testing tools, excelling in fixing systems, analysing potential issues."
+       
     }
 ]
