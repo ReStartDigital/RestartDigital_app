@@ -223,27 +223,27 @@ const Home:React.FunctionComponent = ()=>{
             </div>
 
             {/* Third section */}
-            <div className='w-full 2xl:h-60vh xl:h-60vh lg:h-60vh md:h-100vh sm:h-100vh xs:h-100vh 2xl:p-4 xl:p-4 lg:p-3 md:p-3 sm:p-0 xs:p-0 flex justify-center items-center'>
-                <div className="w-full h-full bg-customFirst rounded-md p-4 flex justify-center items-center gap-4 2xl:flex-row xl:flex-row lg:flex-row md:flex-col sm:flex-col xs:flex-col overflow-hidden">
+            <div className='w-full 2xl:h-60vh xl:h-70vh lg:h-70vh md:h-100vh sm:h-100vh xs:h-100vh 2xl:p-4 xl:p-4 lg:p-3 md:p-3 sm:p-0 xs:p-0 flex justify-center items-center'>
+                <div className="w-full h-full bg-customFirst rounded-md p-4 flex justify-center items-center gap-4 2xl:flex-row xl:flex-row lg:flex-row md:flex-col sm:flex-col xs:flex-col 2xl:overflow-hidden xl:overflow-hidden md:overflow-x-scroll sm:overflow-x-scroll xs:overflow-x-scroll">
                     <div className='w-full h-full gap-4 flex justify-center items-center 2xl:p-0 xl:p-0 lg:p-0 md:p-4 sm:p-4 xs:pl-96 2xl:overflow-hidden xl:overflow-hidden lg:overflow-hidden md:overflow-x-scroll sm:overflow-x-scroll xs:overflow-scroll space-x-4'>
-                        <div className="2xl:w-full 2xl:bg-inherit xl:bg-inherit lg:bg-inherit md:bg-inherit sm:bg-white xs:bg-white xl:w-full lg:w-full md:w-full sm:min-w-[200px] xs:min-w-[200px] h-full flex justify-center items-center flex-col">
+                        <div className="2xl:w-full 2xl:bg-inherit xl:bg-inherit lg:bg-inherit md:bg-inherit sm:bg-white xs:bg-white xl:w-full lg:w-full md:w-full sm:min-w-[200px] xs:min-w-[200px] h-full flex justify-center items-center flex-col p-0">
                             <div className="w-full h-[20%] flex justify-center items-center text-center">
                                 <svg className='text-orange-400 2xl:flex xl:flex lg:flex md:hidden sm:hidden xs:hidden p-3' xmlns="http://www.w3.org/2000/svg" width="17" height="20" viewBox="0 0 24 24">
                                     <path fill="currentColor" d="M18.483 16.767A8.5 8.5 0 0 1 8.118 7.081a1 1 0 0 1-.113.097c-.28.213-.63.292-1.33.45l-.635.144c-2.46.557-3.69.835-3.983 1.776c-.292.94.546 1.921 2.223 3.882l.434.507c.476.557.715.836.822 1.18c.107.345.071.717-.001 1.46l-.066.677c-.253 2.617-.38 3.925.386 4.506s1.918.052 4.22-1.009l.597-.274c.654-.302.981-.452 1.328-.452s.674.15 1.329.452l.595.274c2.303 1.06 3.455 1.59 4.22 1.01c.767-.582.64-1.89.387-4.507z"/>
                                     <path fill="currentColor" d="m9.153 5.408l-.328.588c-.36.646-.54.969-.82 1.182q.06-.045.113-.097a8.5 8.5 0 0 0 10.366 9.686l-.02-.19c-.071-.743-.107-1.115 0-1.46c.107-.344.345-.623.822-1.18l.434-.507c1.677-1.96 2.515-2.941 2.222-3.882c-.292-.941-1.522-1.22-3.982-1.776l-.636-.144c-.699-.158-1.049-.237-1.33-.45c-.28-.213-.46-.536-.82-1.182l-.327-.588C13.58 3.136 12.947 2 12 2s-1.58 1.136-2.847 3.408" opacity="0.5"/>
                                 </svg>
-                                <span className="text-center text-xl capitalize font-Poppins text-orange-400">restart digital category. </span>
+                                <span className="text-center 2xl:text-xl xl:text-md lg:text-md md:text-md sm:text-md xs:text-md xx:text-md capitalize font-Poppins text-orange-400">restart digital category. </span>
                             </div>
                             <div className='w-full h-full flex justify-center items-center'>
                                 <span className="w-full font-Poppins text-center text-black 2xl:text-3xl xl:text-3xl lg:text-3xl md:text-2xl sm:text-xl xs:text-xl capitalize">find the course you are most interested in, just today!</span>
                             </div>
                             <div className="w-full h-[50%]  flex justify-center items-center">
-                                <button className="w-[90%] p-3 bg-black text-white font-Poppins rounded-xl" onClick={handleFirstCourse}>Join our first course</button>
+                                <button className="w-[90%] p-2 bg-black text-white font-Poppins rounded-xl" onClick={handleFirstCourse}>Join our first course</button>
                             </div>
                         </div>
                         <div className="2xl:w-full xl:w-full lg:w-full md:w-full sm:min-w-[200px] xs:min-w-[200px] bg-white h-full flex justify-center items-center flex-col p-2 rounded-md">
                             <div className="w-full h-full flex justify-center items-center">
-                                <span className="font-Lexend text-black text-xl  text-center capitalize">Become a good developer</span>
+                                <span className="font-Lexend text-black 2xl:text-xl xl:text-md lg:text-md md:text-md sm:text-md xs:text-md xx:text-md text-center capitalize">Become a good developer</span>
                             </div>
                             <div className="w-full h-full flex justify-center items-center">
                                 <span className="text-xs font-Poppins text-center">
@@ -255,9 +255,9 @@ const Home:React.FunctionComponent = ()=>{
                             </div>
                             
                         </div>
-                        <div className="2xl:w-full xl:w-full lg:w-full md:w-full sm:min-w-[200px] xs:min-w-[200px] bg-white h-full flex justify-center items-center flex-col p-2 rounded-md">
+                        <div className="2xl:w-full xl:w-full lg:w-full md:w-full sm:min-w-[250px] xs:min-w-[250px] xx:min-w[300px] bg-white h-full flex justify-center items-center flex-col p-2 rounded-md">
                             <div className="w-full h-full flex justify-center items-center">
-                                <span className="font-Lexend text-black text-xl  text-center capitalize">Become a problem solver</span>
+                                <span className="font-Lexend text-black 2xl:text-xl xl:text-md lg:text-md md:text-md sm:text-md xs:text-md xx:text-md text-center capitalize">Become a problem solver</span>
                             </div>
                             <div className="w-full h-full flex justify-center items-center">
                                 <span className="text-xs font-Poppins text-center">

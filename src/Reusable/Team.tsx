@@ -18,7 +18,7 @@ const Team:React.FunctionComponent<Teams> =({ name , position , image_path , lin
     return(
         <div className='w-full h-[490px] m-0 shadow-md shadow-gray-200 bg-white rounded-xl flex justify-start items-center flex-col hover:cursor-pointer' onClick={handleClick}>
             <div className='w-full h-[65%] rounded-t-xl bg-gray-100'>
-                <img src={image_path} className='w-full h-full object-cover object-top rounded-t-xl' alt=''/>
+                <img src={image_path} className='w-full h-full object-cover object-top rounded-t-xl pointer-events-none' alt=''/>
             </div>
             <div className='w-full flex justify-start items-start p-2'>
                 <span className='font-Poppins text-xl font-bold capitalize'>{name}</span>

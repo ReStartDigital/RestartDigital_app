@@ -5,10 +5,13 @@ import Team, { Teams } from "../Reusable/Team";
 import Person1 from "../assets/images/group2.jpg";
 import Person2 from "../assets/images/group3.jpg";
 import Person4 from "../assets/images/group4.jpg";
+import Usestore from "../store/UseStore";
+import Popup from "../Reusables/Popup";
+
 
 const About:React.FC = ()=>{
     const [ data , setData ] = useState<Teams[]>([]);
-
+    const { initial , toggleState } = Usestore();
     const style: React.CSSProperties = {
         clipPath: 'polygon(0 0, 80% 0, 100% 20%, 100% 100%, 0 100%)',
       };
@@ -22,12 +25,18 @@ const About:React.FC = ()=>{
             }catch(error:any){
                 console.log(error);
                 return;
-            }
-            
+            }   
         }
 
         fetchData();
     },[])
+
+
+    const handleLinking =()=>{
+        
+         toggleState();
+      
+    }
 
     return(
         <section className='w-full h-full flex justify-start items-start flex-col'> 
@@ -57,14 +66,17 @@ const About:React.FC = ()=>{
                     }
                 </div>
             </div>
+            {/* <div className="w-full h-10vh flex justify-center items-center p-4">
+                <button className="p-3 pr-4 pl-4 bg-black text-white capitalize hover:rounded-full hover:shadow-lg transition-all rounded-2xl duration-700 hover:shadow-gray-400 font-Poppins" onClick={handleLinking}>Link your community to restart digital</button>
+            </div> */}
             <div className="w-full 2xl:h-15vh xl:h-15vh p-2 flex justify-center items-center">
-                <div className="w-[100%] h-full  flex justify-start items-start flex-col">
+                <div className="w-[80%] h-full  flex justify-center items-center flex-col">
                     <span className="font-Lexend text-black 2xl:text-7xl xl:text-7xl lg:text-5xl md:text-4xl sm:text-3xl xs:text-3xl">Mentorship Programs</span>
                 </div>
             </div>
-            <div className="w-full 2xl:h-20vh xl:h-20vh lg:h-30vh md:h-full sm:h-full xs:h-full p-2 flex justify-start items-start">
-                <div className="2xl:w-[90%] xl:w-[90%] h-full flex justify-start items-start flex-col">
-                    <span className="font-Poppins text-black text-sm ">
+            <div className="w-full 2xl:h-20vh xl:h-20vh lg:h-30vh md:h-full sm:h-full xs:h-full p-2 flex justify-center items-center">
+                <div className="2xl:w-[90%] xl:w-[90%] h-full flex justify-center items-center flex-col">
+                    <span className="font-Poppins text-black text-sm text-center">
                         Mentorship in the tech industry fosters growth, innovation, and collaboration. 
                         By sharing expertise, mentors guide mentees through challenges, empowering them to excel. 
                         This exchange nurtures talent, bridges knowledge gaps, and drives career development.
@@ -78,6 +90,7 @@ const About:React.FC = ()=>{
                         <span className='2xl:text-7xl xl:text-7xl lg:text-5xl md:text-5xl sm:text-4xl xs:text-4xl font-Lexend capitalize'>Previous years of restart digital</span>
                     </div>
             </div>
+           
             <div className='w-full h-full flex 2xl:flex-row xl:flex-row lg:flex-row md:flex-col sm:flex-col xs:flex-col justify-center items-center 2xl:p-4 xl:p-4 lg:p-4 md:p-0 sm:p-0 xs:p-0 gap-4- bg-gray-100'>
                 <div className="2xl:w-[80%] xl:w-[80%] lg:w-[80%] md:w-full sm:w-full xs:w-full h-full  rounded-lg flex justify-center items-center flex-col 2xl:p-4 xl:p-4 lg:p-4 md:p-0 sm:p-0 xs:p-0 ">
                     <div className='w-full flex justify-start items-center p-4'>
@@ -109,6 +122,10 @@ const About:React.FC = ()=>{
                     
                 </div>  
             </div>
+            {/* {
+                initial && <Popup initial={toggleState}/>
+            } */}
+            
         </section>
     )
 }
